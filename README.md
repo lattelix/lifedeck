@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Second Brain OS — Доска активности
 
-## Getting Started
+Живая публичная доска активности: ИИ собирает из календаря события, классифицирует их и рисует как GitHub-граф (heatmap) и ленту.
 
-First, run the development server:
+## Запуск
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Установка зависимостей:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Генерация мок-данных:
+   ```bash
+   npm run mock
+   ```
+   *Создаст `data/events.raw.json` с тестовыми событиями.*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Сборка доски:
+   ```bash
+   npm run board
+   ```
+   *Запустит классификатор и сгенерирует `public/board.json`.*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Запуск приложения:
+   ```bash
+   npm run dev
+   ```
+   *Откройте [http://localhost:3000](http://localhost:3000)*
 
-## Learn More
+## Как подключить LLM (опционально)
+По умолчанию используется Fallback-режим (Rules), основанный на ключевых словах. Для использования LLM для классификации:
+1. Создайте файл `.env` в корне проекта
+2. Добавьте следующие переменные:
+   ```env
+   LLM_BASE_URL="https://api.openai.com/v1" # или другой OpenAI-совместимый эндпоинт (напр. OpenRouter)
+   LLM_API_KEY="ваш-ключ"
+   LLM_MODEL="gpt-4o-mini" # или любая другая модель
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Decisions (Принятые решения)
+- **Node скрипты:** Моки и генерация доски написаны на `.mjs`. Так как `src/lib/classify.ts` требует сборки для импорта в `node`, логика классификатора и категорий минималистично дублируется в `scripts/build-board.mjs`, чтобы избежать таскания тяжелых зависимостей (типа `tsx` или `ts-node`).
+- **Архитектура UI:** Доска читает статический `public/board.json`. `getBoard()` не бросает ошибки, а возвращает null, показывая заглушку в UI. Компоненты логически разбиты и изолированы.
+- **Дни и пустоты:** В Heatmap дни генерируются с выравниванием по понедельникам (через `fillDays`), чтобы сетка выглядела ровно как на GitHub (Пн-Вс).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## TODO
+- [ ] Реальный OAuth для Google Calendar вместо генератора
+- [ ] Бронь-виджет (пока не реализован)
+- [ ] Консьерж ИИ (пока не реализован)
+- [ ] Деплой на Vercel + настройка кастомного поддомена

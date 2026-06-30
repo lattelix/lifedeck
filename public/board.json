@@ -1,0 +1,1888 @@
+{
+  "profile": {
+    "name": "Alex",
+    "tagline": "Building Second Brain OS · dev & founder",
+    "updatedAt": "2026-06-29T12:47:56.528Z"
+  },
+  "categories": [
+    {
+      "id": "work",
+      "label": "Работа",
+      "color": "#1B2BE0"
+    },
+    {
+      "id": "study",
+      "label": "Учёба",
+      "color": "#16A34A"
+    },
+    {
+      "id": "algorithms",
+      "label": "Алгоритмы",
+      "color": "#9333EA"
+    },
+    {
+      "id": "languages",
+      "label": "Языки",
+      "color": "#EA580C"
+    },
+    {
+      "id": "projects",
+      "label": "Проекты",
+      "color": "#0891B2"
+    },
+    {
+      "id": "personal",
+      "label": "Личное",
+      "color": "#6B7280"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-03-02",
+      "totalMinutes": 15,
+      "byCategory": {
+        "languages": 15
+      },
+      "activities": [
+        {
+          "id": "evt_1",
+          "title": "Duolingo streak",
+          "categoryId": "languages",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "totalMinutes": 315,
+      "byCategory": {
+        "algorithms": 90,
+        "study": 120,
+        "projects": 60,
+        "personal": 45
+      },
+      "activities": [
+        {
+          "id": "evt_2",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_3",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_4",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_5",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "totalMinutes": 90,
+      "byCategory": {
+        "study": 90
+      },
+      "activities": [
+        {
+          "id": "evt_6",
+          "title": "Школа 21 - проект",
+          "categoryId": "study",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "totalMinutes": 90,
+      "byCategory": {
+        "work": 90
+      },
+      "activities": [
+        {
+          "id": "evt_7",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_8",
+          "title": "Работа над фичей",
+          "categoryId": "work",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "totalMinutes": 465,
+      "byCategory": {
+        "projects": 225,
+        "work": 120,
+        "languages": 120
+      },
+      "activities": [
+        {
+          "id": "evt_9",
+          "title": "Second Brain OS",
+          "categoryId": "projects",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_10",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_11",
+          "title": "Figma лендинг",
+          "categoryId": "projects",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_12",
+          "title": "Английский разговорный",
+          "categoryId": "languages",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-08",
+      "totalMinutes": 120,
+      "byCategory": {
+        "work": 120
+      },
+      "activities": [
+        {
+          "id": "evt_13",
+          "title": "Стендап",
+          "categoryId": "work",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "totalMinutes": 345,
+      "byCategory": {
+        "languages": 120,
+        "projects": 210,
+        "algorithms": 15
+      },
+      "activities": [
+        {
+          "id": "evt_14",
+          "title": "Английский разговорный",
+          "categoryId": "languages",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_15",
+          "title": "Figma лендинг",
+          "categoryId": "projects",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_16",
+          "title": "Figma лендинг",
+          "categoryId": "projects",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_17",
+          "title": "Leetcode daily",
+          "categoryId": "algorithms",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "totalMinutes": 225,
+      "byCategory": {
+        "work": 45,
+        "personal": 180
+      },
+      "activities": [
+        {
+          "id": "evt_18",
+          "title": "GrowNet админка",
+          "categoryId": "work",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_19",
+          "title": "Прогулка",
+          "categoryId": "personal",
+          "minutes": 180,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "totalMinutes": 90,
+      "byCategory": {
+        "personal": 90
+      },
+      "activities": [
+        {
+          "id": "evt_20",
+          "title": "Спортзал",
+          "categoryId": "personal",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "totalMinutes": 315,
+      "byCategory": {
+        "work": 75,
+        "languages": 240
+      },
+      "activities": [
+        {
+          "id": "evt_21",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_22",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_23",
+          "title": "Английский разговорный",
+          "categoryId": "languages",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_24",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-15",
+      "totalMinutes": 120,
+      "byCategory": {
+        "projects": 120
+      },
+      "activities": [
+        {
+          "id": "evt_25",
+          "title": "LiveProfile",
+          "categoryId": "projects",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "totalMinutes": 60,
+      "byCategory": {
+        "personal": 30,
+        "work": 30
+      },
+      "activities": [
+        {
+          "id": "evt_26",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_27",
+          "title": "GrowNet админка",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "totalMinutes": 285,
+      "byCategory": {
+        "projects": 120,
+        "languages": 45,
+        "algorithms": 120
+      },
+      "activities": [
+        {
+          "id": "evt_28",
+          "title": "Second Brain OS",
+          "categoryId": "projects",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_29",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_30",
+          "title": "Figma лендинг",
+          "categoryId": "projects",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_31",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "totalMinutes": 510,
+      "byCategory": {
+        "work": 180,
+        "study": 180,
+        "projects": 30,
+        "algorithms": 120
+      },
+      "activities": [
+        {
+          "id": "evt_32",
+          "title": "Стендап",
+          "categoryId": "work",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_33",
+          "title": "ВКР драфт",
+          "categoryId": "study",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_34",
+          "title": "Second Brain OS",
+          "categoryId": "projects",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_35",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "totalMinutes": 60,
+      "byCategory": {
+        "languages": 60
+      },
+      "activities": [
+        {
+          "id": "evt_36",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "totalMinutes": 210,
+      "byCategory": {
+        "algorithms": 120,
+        "projects": 90
+      },
+      "activities": [
+        {
+          "id": "evt_37",
+          "title": "Leetcode daily",
+          "categoryId": "algorithms",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_38",
+          "title": "LiveProfile",
+          "categoryId": "projects",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "totalMinutes": 75,
+      "byCategory": {
+        "languages": 15,
+        "personal": 60
+      },
+      "activities": [
+        {
+          "id": "evt_39",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_40",
+          "title": "Прогулка",
+          "categoryId": "personal",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-25",
+      "totalMinutes": 150,
+      "byCategory": {
+        "personal": 45,
+        "languages": 60,
+        "algorithms": 45
+      },
+      "activities": [
+        {
+          "id": "evt_41",
+          "title": "Спортзал",
+          "categoryId": "personal",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_42",
+          "title": "Обед",
+          "categoryId": "personal",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_43",
+          "title": "Английский разговорный",
+          "categoryId": "languages",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_44",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "totalMinutes": 15,
+      "byCategory": {
+        "study": 15
+      },
+      "activities": [
+        {
+          "id": "evt_45",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "totalMinutes": 315,
+      "byCategory": {
+        "algorithms": 90,
+        "personal": 120,
+        "languages": 45,
+        "projects": 60
+      },
+      "activities": [
+        {
+          "id": "evt_46",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_47",
+          "title": "Спортзал",
+          "categoryId": "personal",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_48",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_49",
+          "title": "Second Brain OS",
+          "categoryId": "projects",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "totalMinutes": 15,
+      "byCategory": {
+        "languages": 15
+      },
+      "activities": [
+        {
+          "id": "evt_50",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "totalMinutes": 210,
+      "byCategory": {
+        "personal": 30,
+        "study": 180
+      },
+      "activities": [
+        {
+          "id": "evt_51",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_52",
+          "title": "Лекция по архитектуре",
+          "categoryId": "study",
+          "minutes": 180,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "totalMinutes": 90,
+      "byCategory": {
+        "personal": 90
+      },
+      "activities": [
+        {
+          "id": "evt_53",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "totalMinutes": 240,
+      "byCategory": {
+        "languages": 90,
+        "study": 60,
+        "work": 90
+      },
+      "activities": [
+        {
+          "id": "evt_54",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_55",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_56",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_57",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "totalMinutes": 300,
+      "byCategory": {
+        "personal": 180,
+        "study": 90,
+        "algorithms": 30
+      },
+      "activities": [
+        {
+          "id": "evt_58",
+          "title": "Прогулка",
+          "categoryId": "personal",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_59",
+          "title": "Школа 21 - проект",
+          "categoryId": "study",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_60",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_61",
+          "title": "Leetcode daily",
+          "categoryId": "algorithms",
+          "minutes": 30,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "totalMinutes": 45,
+      "byCategory": {
+        "languages": 45
+      },
+      "activities": [
+        {
+          "id": "evt_62",
+          "title": "Duolingo streak",
+          "categoryId": "languages",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "totalMinutes": 90,
+      "byCategory": {
+        "projects": 90
+      },
+      "activities": [
+        {
+          "id": "evt_63",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "totalMinutes": 120,
+      "byCategory": {
+        "algorithms": 15,
+        "study": 105
+      },
+      "activities": [
+        {
+          "id": "evt_64",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_65",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_66",
+          "title": "Школа 21 - проект",
+          "categoryId": "study",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "totalMinutes": 90,
+      "byCategory": {
+        "study": 45,
+        "personal": 45
+      },
+      "activities": [
+        {
+          "id": "evt_67",
+          "title": "ВКР драфт",
+          "categoryId": "study",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_68",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_69",
+          "title": "Прогулка",
+          "categoryId": "personal",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "totalMinutes": 120,
+      "byCategory": {
+        "work": 120
+      },
+      "activities": [
+        {
+          "id": "evt_70",
+          "title": "Weekly meeting",
+          "categoryId": "work",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "totalMinutes": 30,
+      "byCategory": {
+        "projects": 15,
+        "algorithms": 15
+      },
+      "activities": [
+        {
+          "id": "evt_71",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_72",
+          "title": "Leetcode daily",
+          "categoryId": "algorithms",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "totalMinutes": 165,
+      "byCategory": {
+        "projects": 45,
+        "study": 120
+      },
+      "activities": [
+        {
+          "id": "evt_73",
+          "title": "LiveProfile",
+          "categoryId": "projects",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_74",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "totalMinutes": 120,
+      "byCategory": {
+        "projects": 120
+      },
+      "activities": [
+        {
+          "id": "evt_75",
+          "title": "LiveProfile",
+          "categoryId": "projects",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "totalMinutes": 240,
+      "byCategory": {
+        "languages": 120,
+        "algorithms": 120
+      },
+      "activities": [
+        {
+          "id": "evt_76",
+          "title": "Английский разговорный",
+          "categoryId": "languages",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_77",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "totalMinutes": 240,
+      "byCategory": {
+        "algorithms": 180,
+        "work": 60
+      },
+      "activities": [
+        {
+          "id": "evt_78",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_79",
+          "title": "Работа над фичей",
+          "categoryId": "work",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "totalMinutes": 135,
+      "byCategory": {
+        "languages": 15,
+        "work": 60,
+        "algorithms": 60
+      },
+      "activities": [
+        {
+          "id": "evt_80",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_81",
+          "title": "Weekly meeting",
+          "categoryId": "work",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_82",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "totalMinutes": 60,
+      "byCategory": {
+        "personal": 60
+      },
+      "activities": [
+        {
+          "id": "evt_83",
+          "title": "Спортзал",
+          "categoryId": "personal",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-28",
+      "totalMinutes": 45,
+      "byCategory": {
+        "work": 45
+      },
+      "activities": [
+        {
+          "id": "evt_84",
+          "title": "GrowNet админка",
+          "categoryId": "work",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "totalMinutes": 165,
+      "byCategory": {
+        "personal": 60,
+        "projects": 105
+      },
+      "activities": [
+        {
+          "id": "evt_85",
+          "title": "Спортзал",
+          "categoryId": "personal",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_86",
+          "title": "LiveProfile",
+          "categoryId": "projects",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_87",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "totalMinutes": 15,
+      "byCategory": {
+        "algorithms": 15
+      },
+      "activities": [
+        {
+          "id": "evt_88",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "totalMinutes": 240,
+      "byCategory": {
+        "study": 180,
+        "work": 60
+      },
+      "activities": [
+        {
+          "id": "evt_89",
+          "title": "ВКР драфт",
+          "categoryId": "study",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_90",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "totalMinutes": 195,
+      "byCategory": {
+        "study": 45,
+        "algorithms": 15,
+        "work": 90,
+        "personal": 45
+      },
+      "activities": [
+        {
+          "id": "evt_91",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_92",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_93",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_94",
+          "title": "Спортзал",
+          "categoryId": "personal",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "totalMinutes": 465,
+      "byCategory": {
+        "projects": 45,
+        "personal": 240,
+        "algorithms": 180
+      },
+      "activities": [
+        {
+          "id": "evt_95",
+          "title": "Figma лендинг",
+          "categoryId": "projects",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_96",
+          "title": "Спортзал",
+          "categoryId": "personal",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_97",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_98",
+          "title": "Обед",
+          "categoryId": "personal",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "totalMinutes": 90,
+      "byCategory": {
+        "languages": 45,
+        "algorithms": 45
+      },
+      "activities": [
+        {
+          "id": "evt_99",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_100",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "totalMinutes": 300,
+      "byCategory": {
+        "study": 180,
+        "work": 120
+      },
+      "activities": [
+        {
+          "id": "evt_101",
+          "title": "ВКР драфт",
+          "categoryId": "study",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_102",
+          "title": "Стендап",
+          "categoryId": "work",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "totalMinutes": 90,
+      "byCategory": {
+        "languages": 30,
+        "algorithms": 60
+      },
+      "activities": [
+        {
+          "id": "evt_103",
+          "title": "Duolingo streak",
+          "categoryId": "languages",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_104",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "totalMinutes": 270,
+      "byCategory": {
+        "projects": 180,
+        "study": 90
+      },
+      "activities": [
+        {
+          "id": "evt_105",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_106",
+          "title": "Школа 21 - проект",
+          "categoryId": "study",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "totalMinutes": 270,
+      "byCategory": {
+        "study": 90,
+        "personal": 180
+      },
+      "activities": [
+        {
+          "id": "evt_107",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_108",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 180,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "totalMinutes": 135,
+      "byCategory": {
+        "projects": 135
+      },
+      "activities": [
+        {
+          "id": "evt_109",
+          "title": "Second Brain OS",
+          "categoryId": "projects",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_110",
+          "title": "LiveProfile",
+          "categoryId": "projects",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "totalMinutes": 180,
+      "byCategory": {
+        "work": 165,
+        "personal": 15
+      },
+      "activities": [
+        {
+          "id": "evt_111",
+          "title": "Работа над фичей",
+          "categoryId": "work",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_112",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_113",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_114",
+          "title": "Работа над фичей",
+          "categoryId": "work",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "totalMinutes": 135,
+      "byCategory": {
+        "projects": 120,
+        "study": 15
+      },
+      "activities": [
+        {
+          "id": "evt_115",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_116",
+          "title": "Лекция по архитектуре",
+          "categoryId": "study",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "totalMinutes": 15,
+      "byCategory": {
+        "study": 15
+      },
+      "activities": [
+        {
+          "id": "evt_117",
+          "title": "Школа 21 - проект",
+          "categoryId": "study",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "totalMinutes": 15,
+      "byCategory": {
+        "work": 15
+      },
+      "activities": [
+        {
+          "id": "evt_118",
+          "title": "GrowNet админка",
+          "categoryId": "work",
+          "minutes": 15,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "totalMinutes": 270,
+      "byCategory": {
+        "languages": 270
+      },
+      "activities": [
+        {
+          "id": "evt_119",
+          "title": "Английский разговорный",
+          "categoryId": "languages",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_120",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "totalMinutes": 360,
+      "byCategory": {
+        "languages": 180,
+        "algorithms": 180
+      },
+      "activities": [
+        {
+          "id": "evt_121",
+          "title": "Duolingo streak",
+          "categoryId": "languages",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_122",
+          "title": "Leetcode daily",
+          "categoryId": "algorithms",
+          "minutes": 180,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "totalMinutes": 345,
+      "byCategory": {
+        "work": 120,
+        "algorithms": 225
+      },
+      "activities": [
+        {
+          "id": "evt_123",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_124",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_125",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_126",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "totalMinutes": 300,
+      "byCategory": {
+        "algorithms": 90,
+        "languages": 180,
+        "work": 30
+      },
+      "activities": [
+        {
+          "id": "evt_127",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_128",
+          "title": "English class",
+          "categoryId": "languages",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_129",
+          "title": "Weekly meeting",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "totalMinutes": 135,
+      "byCategory": {
+        "work": 45,
+        "projects": 90
+      },
+      "activities": [
+        {
+          "id": "evt_130",
+          "title": "Weekly meeting",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_131",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_132",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "totalMinutes": 60,
+      "byCategory": {
+        "algorithms": 15,
+        "personal": 45
+      },
+      "activities": [
+        {
+          "id": "evt_133",
+          "title": "Leetcode daily",
+          "categoryId": "algorithms",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_134",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "totalMinutes": 135,
+      "byCategory": {
+        "algorithms": 45,
+        "work": 90
+      },
+      "activities": [
+        {
+          "id": "evt_135",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_136",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_137",
+          "title": "Weekly meeting",
+          "categoryId": "work",
+          "minutes": 30,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "totalMinutes": 540,
+      "byCategory": {
+        "work": 300,
+        "personal": 120,
+        "algorithms": 120
+      },
+      "activities": [
+        {
+          "id": "evt_138",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_139",
+          "title": "Работа над фичей",
+          "categoryId": "work",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_140",
+          "title": "Обед",
+          "categoryId": "personal",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_141",
+          "title": "Алгоритмы графов",
+          "categoryId": "algorithms",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "totalMinutes": 285,
+      "byCategory": {
+        "work": 45,
+        "algorithms": 90,
+        "study": 60,
+        "personal": 90
+      },
+      "activities": [
+        {
+          "id": "evt_142",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 45,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_143",
+          "title": "Leetcode daily",
+          "categoryId": "algorithms",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_144",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_145",
+          "title": "Прогулка",
+          "categoryId": "personal",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "totalMinutes": 135,
+      "byCategory": {
+        "personal": 120,
+        "work": 15
+      },
+      "activities": [
+        {
+          "id": "evt_146",
+          "title": "Прогулка",
+          "categoryId": "personal",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_147",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_148",
+          "title": "Чтение книги",
+          "categoryId": "personal",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "totalMinutes": 45,
+      "byCategory": {
+        "personal": 45
+      },
+      "activities": [
+        {
+          "id": "evt_149",
+          "title": "Обед",
+          "categoryId": "personal",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "totalMinutes": 45,
+      "byCategory": {
+        "work": 45
+      },
+      "activities": [
+        {
+          "id": "evt_150",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 45,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "totalMinutes": 255,
+      "byCategory": {
+        "algorithms": 90,
+        "languages": 60,
+        "work": 105
+      },
+      "activities": [
+        {
+          "id": "evt_151",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 90,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_152",
+          "title": "Duolingo streak",
+          "categoryId": "languages",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_153",
+          "title": "GrowNet админка",
+          "categoryId": "work",
+          "minutes": 15,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_154",
+          "title": "Созвон с командой",
+          "categoryId": "work",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "totalMinutes": 150,
+      "byCategory": {
+        "projects": 60,
+        "study": 90
+      },
+      "activities": [
+        {
+          "id": "evt_155",
+          "title": "Дизайн MVP",
+          "categoryId": "projects",
+          "minutes": 60,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_156",
+          "title": "Школа 21 - проект",
+          "categoryId": "study",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "totalMinutes": 30,
+      "byCategory": {
+        "personal": 30
+      },
+      "activities": [
+        {
+          "id": "evt_157",
+          "title": "Обед",
+          "categoryId": "personal",
+          "minutes": 30,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "totalMinutes": 450,
+      "byCategory": {
+        "projects": 300,
+        "study": 30,
+        "work": 120
+      },
+      "activities": [
+        {
+          "id": "evt_158",
+          "title": "Second Brain OS",
+          "categoryId": "projects",
+          "minutes": 180,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_159",
+          "title": "Курс на Синергии",
+          "categoryId": "study",
+          "minutes": 30,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_160",
+          "title": "TalentBay devops",
+          "categoryId": "work",
+          "minutes": 120,
+          "source": "google_calendar"
+        },
+        {
+          "id": "evt_161",
+          "title": "Figma лендинг",
+          "categoryId": "projects",
+          "minutes": 120,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "totalMinutes": 60,
+      "byCategory": {
+        "study": 60
+      },
+      "activities": [
+        {
+          "id": "evt_162",
+          "title": "Школа 21 - проект",
+          "categoryId": "study",
+          "minutes": 60,
+          "source": "google_calendar"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "totalMinutes": 90,
+      "byCategory": {
+        "algorithms": 90
+      },
+      "activities": [
+        {
+          "id": "evt_163",
+          "title": "Решение задач на codewars",
+          "categoryId": "algorithms",
+          "minutes": 90,
+          "source": "google_calendar"
+        }
+      ]
+    }
+  ]
+}
