@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Spline_Sans } from "next/font/google";
 import "./globals.css";
+import { ThemeScript } from "@/components/ThemeScript";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -14,7 +15,7 @@ const spline = Spline_Sans({
 
 export const metadata: Metadata = {
   title: "Second Brain OS",
-  description: "Public activity board",
+  description: "Public activity dashboard — track work, study, projects & more",
 };
 
 export default function RootLayout({
@@ -23,7 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" suppressHydrationWarning>
+      <head>
+        <ThemeScript />
+      </head>
       <body
         className={`${spline.variable} ${bricolage.variable} font-sans antialiased`}
       >

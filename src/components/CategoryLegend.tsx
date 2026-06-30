@@ -1,15 +1,21 @@
-import { categories } from '@/lib/categories';
+import { Category } from '@/lib/types';
 
-export function CategoryLegend() {
+interface CategoryLegendProps {
+  categories: Category[];
+}
+
+export function CategoryLegend({ categories }: CategoryLegendProps) {
   return (
-    <div className="flex flex-wrap gap-4 mb-8">
+    <div className="flex flex-wrap gap-4">
       {categories.map(cat => (
         <div key={cat.id} className="flex items-center gap-2">
           <div
-            className="w-3 h-3 rounded-full"
+            className="w-2.5 h-2.5 rounded-full"
             style={{ backgroundColor: cat.color }}
           />
-          <span className="text-sm font-medium text-gray-700">{cat.label}</span>
+          <span className="text-xs font-medium" style={{ color: 'var(--text-secondary)' }}>
+            {cat.label}
+          </span>
         </div>
       ))}
     </div>
