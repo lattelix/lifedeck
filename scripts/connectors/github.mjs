@@ -5,6 +5,15 @@
 
 export const meta = { id: 'github', label: 'GitHub' };
 
+function sourceFor(username, status, statusMessage) {
+  return {
+    ...meta,
+    url: username ? `https://github.com/${encodeURIComponent(username)}` : undefined,
+    status,
+    ...(statusMessage ? { statusMessage } : {}),
+  };
+}
+
 // Длительности нет → оцениваем «усилие» в минутах по типу события (прокси для интенсивности доски)
 function minutesFor(ev) {
   switch (ev.type) {
@@ -45,20 +54,29 @@ export async function collect(config = {}) {
   const username = config.username;
   if (!username) {
     console.warn('[github] нет username в connectors.config.json — пропускаю');
-    return { source: meta, items: [], activities: [] };
+    return {
+      source: sourceFor('', 'error', 'В конфигурации не указан username'),
+      items: [],
+      activities: [],
+    };
   }
 
   const headers = { 'User-Agent': 'second-brain-os', 'Accept': 'application/vnd.github+json' };
   if (process.env.GITHUB_TOKEN) headers['Authorization'] = `Bearer ${process.env.GITHUB_TOKEN}`;
 
   let events = [];
+  let requestError = '';
   try {
     for (let page = 1; page <= 3; page++) {
       const res = await fetch(
         `https://api.github.com/users/${encodeURIComponent(username)}/events/public?per_page=100&page=${page}`,
         { headers }
       );
-      if (!res.ok) { console.warn(`[github] HTTP ${res.status} (page ${page})`); break; }
+      if (!res.ok) {
+        requestError = `GitHub API вернул HTTP ${res.status}`;
+        console.warn(`[github] HTTP ${res.status} (page ${page})`);
+        break;
+      }
       const batch = await res.json();
       if (!Array.isArray(batch) || batch.length === 0) break;
       events = events.concat(batch);
@@ -66,7 +84,19 @@ export async function collect(config = {}) {
     }
   } catch (e) {
     console.warn('[github] fetch не удался, источник пуст:', e.message);
-    return { source: meta, items: [], activities: [] };
+    return {
+      source: sourceFor(username, 'error', 'Не удалось получить данные GitHub'),
+      items: [],
+      activities: [],
+    };
+  }
+
+  if (requestError && events.length === 0) {
+    return {
+      source: sourceFor(username, 'error', requestError),
+      items: [],
+      activities: [],
+    };
   }
 
   const itemsMap = new Map();
@@ -89,5 +119,13 @@ export async function collect(config = {}) {
   }
 
   console.log(`[github] @${username}: ${activities.length} событий, ${itemsMap.size} репозиториев`);
-  return { source: meta, items: [...itemsMap.values()], activities };
+  return {
+    source: sourceFor(
+      username,
+      activities.length > 0 ? 'ok' : 'empty',
+      activities.length > 0 ? '' : 'За доступный период публичных событий не найдено',
+    ),
+    items: [...itemsMap.values()],
+    activities,
+  };
 }

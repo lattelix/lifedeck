@@ -1,8 +1,13 @@
-# Second Brain OS — Доска активности
+# Second Brain OS — Live Activity Board
 
-Живая публичная доска активности: ИИ собирает из календаря события, классифицирует их по **источникам → категориям → делам** и рисует как GitHub-граф (heatmap).
+[Концепция продукта](docs/product-concept.md) · [План разработки](docs/development-plan.md)
 
-Тёмная/светлая тема в стиле Obsidian, glassmorphism-панели, адаптивный сайдбар.
+Self-owned публичный профиль и личный дашборд: реальные активности из разных ресурсов
+нормализуются в один контракт и показываются как GitHub-style heatmap.
+
+Главный принцип: не выдумывать данные. Каждый ресурс подключается отдельным адаптером,
+включается/выключается через `connectors.config.json`, а UI строит дерево настроек из
+готового `public/board.json`.
 
 ## Запуск
 
@@ -11,23 +16,66 @@
    pnpm install
    ```
 
-2. Генерация мок-данных:
-   ```bash
-   pnpm mock
-   ```
-   *Создаст `data/events.raw.json` с тестовыми событиями (~120 дней).*
-
-3. Сборка доски:
+2. Сборка доски:
    ```bash
    pnpm board
    ```
-   *Запустит классификатор и сгенерирует `public/board.json` (v2).*
+   Скрипт обходит включенные коннекторы и генерирует `public/board.json`.
 
-4. Запуск приложения:
+3. Запуск приложения:
    ```bash
    pnpm dev
    ```
-   *Откройте [http://localhost:3000](http://localhost:3000)*
+   Откройте [http://localhost:3000](http://localhost:3000).
+
+4. Production-проверка:
+   ```bash
+   pnpm build
+   ```
+
+Мок календаря остается только dev-инструментом:
+
+```bash
+pnpm mock
+```
+
+По умолчанию `calendar` выключен в `connectors.config.json`, чтобы production-доска
+не содержала синтетические события до подключения реального Google Calendar OAuth.
+
+## Источники
+
+Текущие адаптеры:
+
+- `scripts/connectors/github.mjs` — GitHub public Events API.
+- `scripts/connectors/leetcode.mjs` — LeetCode GraphQL `submissionCalendar`.
+- `scripts/connectors/codewars.mjs` — Codewars public API.
+- `scripts/connectors/calendar.mjs` — dev/mock из `data/events.raw.json`.
+
+Адаптер экспортирует:
+
+```js
+export const meta = { id: 'github', label: 'GitHub' };
+export async function collect(config) {
+  return { source, items, activities };
+}
+```
+
+`activity`:
+
+```ts
+{
+  id: string;
+  title: string;
+  categoryId: string;
+  sourceId: string;
+  itemId: string;
+  minutes: number;
+  date: string; // YYYY-MM-DD
+}
+```
+
+Адаптеры должны быть устойчивыми: сеть, 404 или пустой профиль возвращают пустой результат,
+а не роняют сборку.
 
 ## Контракт данных v2
 
@@ -42,36 +90,18 @@ UI целиком строится из `board.json` — дерево настр
 
 ## Как добавить новый источник
 
-1. Добавьте запись в `src/lib/sources.ts`:
-   ```ts
-   { id: 'github', label: 'GitHub' }
-   ```
+1. Создайте `scripts/connectors/<id>.mjs`.
+2. Экспортируйте `meta` и `collect(config)`.
+3. Зарегистрируйте модуль в `REGISTRY` внутри `scripts/build-board.mjs`.
+4. Добавьте источник в `connectors.config.json`.
+5. Запустите `pnpm board && pnpm build`.
 
-2. Добавьте дела для этого источника в `src/lib/items.ts`:
-   ```ts
-   { id: 'github-commits', label: 'Коммиты', categoryId: 'projects', sourceId: 'github', keywords: ['commit'] }
-   ```
-
-3. Продублируйте эти записи в `scripts/build-board.mjs` (массивы `sources` и `items`).
-
-4. Подготовьте `data/events.raw.json` с нужным `source: 'github'` и запустите `pnpm board`.
-
-## Как добавить новое дело
-
-1. Добавьте запись в `src/lib/items.ts` с нужным `categoryId`, `sourceId` и ключевыми словами:
-   ```ts
-   { id: 'new-project', label: 'Новый проект', categoryId: 'projects', sourceId: 'calendar', keywords: ['новый проект'] }
-   ```
-
-2. Продублируйте в `scripts/build-board.mjs` (массив `items`).
-
-3. Пересоберите: `pnpm board`.
-
-Классификатор ищет ключевые слова в названии события (case-insensitive). Порядок в массиве `items` важен — первое совпадение побеждает. Если не нашлось — `itemId: 'other'`, `categoryId: 'personal'`.
+Не добавляйте универсальный LLM-парсер как основной путь. Новый ресурс — маленький
+адаптер к конкретному API/странице, общий контракт и общий агрегатор.
 
 ## Как подключить LLM (опционально)
 
-По умолчанию используется Fallback-режим (Rules), основанный на ключевых словах. Для использования LLM для классификации:
+LLM используется только опционально для классификации calendar-событий. Для включения:
 1. Создайте файл `.env` в корне проекта
 2. Добавьте следующие переменные:
    ```env
@@ -80,13 +110,27 @@ UI целиком строится из `board.json` — дерево настр
    LLM_MODEL="gpt-4o-mini"
    ```
 
+## Автообновление
+
+`.github/workflows/update-board.yml` запускается ежедневно и вручную через
+`workflow_dispatch`:
+
+1. устанавливает зависимости;
+2. запускает `pnpm board`;
+3. проверяет `pnpm lint` и `pnpm build`;
+4. коммитит измененный `public/board.json`.
+
+После push Vercel заново деплоит сайт со свежим статически импортированным `board.json`.
+Для GitHub-коннектора workflow передает `secrets.GITHUB_TOKEN` как `GITHUB_TOKEN`.
+
 ## Decisions (Принятые решения)
 
 - **v2 контракт:** Board включает `sources[]` и `items[]`. Каждая Activity теперь несёт `sourceId` и `itemId`. Дерево настроек строится из этих массивов динамически.
 - **Obsidian-палитра:** Тёмная тема: фон `#1E1E1E`, панели `#262626`, текст `#DCDDDE`. Светлая: фон `#FAFAFA`, панели `#FFFFFF`. Акцент `#7C3AED` (оба режима).
 - **CSS-переменные + `.dark` класс:** Тема реализована через CSS custom properties, переключаемые классом `.dark` на `<html>`. Без Tailwind dark-mode variant — для полного контроля.
 - **Glassmorphism:** Сайдбар, карточки, модалка и тултипы используют `backdrop-filter: blur()` + полупрозрачный фон + тонкая граница.
-- **Дублирование справочников в MJS:** Скрипты `scripts/*.mjs` работают в чистом Node.js без TS-компиляции. Справочники (categories, sources, items) дублированы в `build-board.mjs`. Это trade-off, чтобы не тащить `tsx`/`ts-node` как зависимость.
+- **Adapter pattern:** Общее ядро в `scripts/build-board.mjs`, данные источников — в маленьких `scripts/connectors/*.mjs`.
+- **Статический `board.json`:** `src/lib/board.ts` импортирует `public/board.json` статически, поэтому обновление данных требует `pnpm board` и нового деплоя.
 - **Фильтры в localStorage:** Состояние тумблеров (source/category/item) хранится в `board-filters`, тема — в `theme`. При изменении board.json новые items/sources подхватываются через merge с defaults.
 - **ActivityFeed удалён:** По ТЗ. Вся визуализация — через heatmap + тултипы.
 - **Каскадные тумблеры:** Выключение источника гасит все его дела и пересчитывает категории. Выключение категории гасит все дела в ней. Выключение последнего дела гасит родителя.
@@ -96,14 +140,15 @@ UI целиком строится из `board.json` — дерево настр
 ## TODO
 
 - [ ] Реальный OAuth для Google Calendar вместо генератора
-- [ ] GitHub-источник (коммиты/PR через API)
-- [ ] LeetCode-источник (сабмишены)
+- [x] GitHub-источник (public events API)
+- [x] LeetCode-источник (submission calendar)
+- [x] Codewars-источник (completed kata API)
 - [ ] Бронь-виджет (пока не реализован)
 - [ ] Консьерж ИИ (пока не реализован)
-- [ ] Деплой на Vercel + настройка кастомного поддомена
+- [x] Деплой на Vercel + кастомный поддомен
 
 ## Известные ограничения
 
-- Справочники дублируются между `src/lib/` и `scripts/build-board.mjs` — нужна единая JSON-конфигурация или переход на `tsx` для скриптов.
+- `calendar` пока mock/dev-источник и выключен в production-конфиге.
 - Фильтры работают только на клиенте (localStorage) — серверный рендер всегда показывает все данные до гидратации.
 - При множестве категорий с одинаковыми минутами доминантный цвет ячейки выбирается по первому в алфавитном порядке.

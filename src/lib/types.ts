@@ -13,6 +13,9 @@ export interface Category {
 export interface Source {
   id: string;
   label: string;
+  url?: string;
+  status?: 'ok' | 'empty' | 'error';
+  statusMessage?: string;
 }
 
 export interface Item {

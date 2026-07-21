@@ -15,7 +15,7 @@ export default function Home() {
     );
   }
 
-  const paddedDays = fillDays(board.days, 18);
+  const paddedDays = fillDays(board.days, 26);
 
   return <Dashboard board={board} paddedDays={paddedDays} />;
 }

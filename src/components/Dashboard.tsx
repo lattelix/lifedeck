@@ -1,11 +1,20 @@
 'use client';
 
-import { useState } from 'react';
-import { Board, DayActivity } from '@/lib/types';
+import { useMemo, useState } from 'react';
+import type { Board, DayActivity } from '@/lib/types';
+import {
+  activeCategories,
+  filterBoardDays,
+  formatUpdatedAt,
+  latestActiveDay,
+  summarizeActivity,
+} from '@/lib/activity';
 import { Sidebar } from '@/components/Sidebar';
 import { ActivityHeatmap } from '@/components/ActivityHeatmap';
+import { ActivityDayPanel } from '@/components/ActivityDayPanel';
 import { CategoryLegend } from '@/components/CategoryLegend';
 import { SettingsModal } from '@/components/SettingsModal';
+import { SourcesOverview } from '@/components/SourcesOverview';
 import { useTheme } from '@/hooks/useTheme';
 import { useBoardFilters } from '@/hooks/useBoardFilters';
 
@@ -19,84 +28,119 @@ export function Dashboard({ board, paddedDays }: DashboardProps) {
   const { filters, toggleSource, toggleCategory, toggleItem } = useBoardFilters(board);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(
+    () => latestActiveDay(paddedDays)?.date ?? paddedDays.at(-1)?.date ?? '',
+  );
+
+  const filteredDays = useMemo(
+    () => filterBoardDays(paddedDays, filters),
+    [filters, paddedDays],
+  );
+  const summary = useMemo(() => summarizeActivity(filteredDays), [filteredDays]);
+  const visibleCategories = useMemo(
+    () => activeCategories(board, filteredDays),
+    [board, filteredDays],
+  );
+  const selectedDay = filteredDays.find(day => day.date === selectedDate)
+    ?? latestActiveDay(filteredDays)
+    ?? filteredDays.at(-1);
 
   return (
     <>
-      {/* Burger button (mobile) */}
       <button
         className="burger-btn"
-        onClick={() => setSidebarOpen(!sidebarOpen)}
+        onClick={() => setSidebarOpen(value => !value)}
         type="button"
-        aria-label="Меню"
+        aria-label={sidebarOpen ? 'Закрыть навигацию' : 'Открыть навигацию'}
+        aria-expanded={sidebarOpen}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <line x1="3" y1="6" x2="21" y2="6" />
-          <line x1="3" y1="12" x2="21" y2="12" />
-          <line x1="3" y1="18" x2="21" y2="18" />
-        </svg>
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
       </button>
 
-      {/* Sidebar */}
       <Sidebar
+        board={board}
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
         theme={theme}
         onToggleTheme={toggleTheme}
       />
 
-      {/* Main content */}
-      <div className="main-content">
-        {/* Top bar */}
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h1 className="text-2xl font-bold" style={{ color: 'var(--text-primary)' }}>
-              Доска активности
-            </h1>
-            <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-              Обновлено {new Date(board.profile.updatedAt).toLocaleDateString('ru-RU', {
-                day: 'numeric',
-                month: 'long',
-                hour: '2-digit',
-                minute: '2-digit',
-              })}
-            </p>
+      <main className="main-content">
+        <section className="profile-overview" id="overview">
+          <div className="profile-heading">
+            <div className="profile-kicker">
+              <span className="live-indicator" aria-hidden="true" />
+              Живой профиль
+            </div>
+            <h1>{board.profile.name}</h1>
+            <p>{board.profile.tagline}</p>
+          </div>
+          <div className="freshness-block">
+            <span>Последняя синхронизация</span>
+            <strong>{formatUpdatedAt(board.profile.updatedAt)}</strong>
+          </div>
+        </section>
+
+        <section className="metric-strip" aria-label="Сводка активности">
+          <Metric value={summary.activeDays} label="активных дней" />
+          <Metric value={summary.activityCount} label="подтверждённых событий" />
+          <Metric value={summary.activeSources} label="источника с данными" />
+          <Metric value={summary.activeItems} label="активных дел" />
+        </section>
+
+        <section className="content-section" id="activity">
+          <div className="section-header">
+            <div>
+              <p className="eyebrow">Последние 26 недель</p>
+              <h2>Активность</h2>
+            </div>
+            <button
+              onClick={() => setSettingsOpen(true)}
+              className="secondary-button"
+              type="button"
+              aria-label="Настроить источники и категории"
+            >
+              <SettingsIcon />
+              <span>Фильтры</span>
+            </button>
           </div>
 
-          <button
-            onClick={() => setSettingsOpen(true)}
-            className="w-10 h-10 rounded-xl flex items-center justify-center transition-all hover:scale-105"
-            style={{
-              background: 'var(--bg-panel-glass)',
-              border: '1px solid var(--border-glass)',
-              color: 'var(--text-secondary)',
-              backdropFilter: 'blur(8px)',
-            }}
-            type="button"
-            aria-label="Настройки"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="3" />
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-            </svg>
-          </button>
-        </div>
-
-        {/* Heatmap card */}
-        <div className="glass-card p-6 mb-6">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-base font-semibold" style={{ color: 'var(--text-primary)' }}>
-              График активности
-            </h2>
+          <div className="activity-layout">
+            <div className="surface heatmap-panel">
+              <ActivityHeatmap
+                days={filteredDays}
+                board={board}
+                selectedDate={selectedDay?.date ?? ''}
+                onSelectDay={setSelectedDate}
+              />
+              <div className="heatmap-footer">
+                <CategoryLegend categories={visibleCategories} />
+                <span className="metric-note">Интенсивность, не учёт рабочего времени</span>
+              </div>
+            </div>
+            {selectedDay ? <ActivityDayPanel board={board} day={selectedDay} /> : null}
           </div>
-          <ActivityHeatmap days={paddedDays} board={board} filters={filters} />
-          <div className="mt-4">
-            <CategoryLegend categories={board.categories} />
-          </div>
-        </div>
-      </div>
+        </section>
 
-      {/* Settings modal */}
-      {settingsOpen && (
+        <section className="content-section" id="sources">
+          <div className="section-header">
+            <div>
+              <p className="eyebrow">Происхождение данных</p>
+              <h2>Источники</h2>
+            </div>
+          </div>
+          <SourcesOverview board={board} days={filteredDays} />
+        </section>
+
+        <footer className="site-footer">
+          <span>Second Brain OS</span>
+          <span>Self-owned activity profile</span>
+        </footer>
+      </main>
+
+      {settingsOpen ? (
         <SettingsModal
           board={board}
           filters={filters}
@@ -107,7 +151,24 @@ export function Dashboard({ board, paddedDays }: DashboardProps) {
           onToggleTheme={toggleTheme}
           onClose={() => setSettingsOpen(false)}
         />
-      )}
+      ) : null}
     </>
+  );
+}
+
+function Metric({ value, label }: { value: number; label: string }) {
+  return (
+    <div className="metric-item">
+      <strong>{value}</strong>
+      <span>{label}</span>
+    </div>
+  );
+}
+
+function SettingsIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    </svg>
   );
 }

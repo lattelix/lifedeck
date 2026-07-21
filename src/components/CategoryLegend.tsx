@@ -5,17 +5,19 @@ interface CategoryLegendProps {
 }
 
 export function CategoryLegend({ categories }: CategoryLegendProps) {
+  if (categories.length === 0) {
+    return <span className="legend-empty">Нет активных категорий</span>;
+  }
+
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="category-legend">
       {categories.map(cat => (
-        <div key={cat.id} className="flex items-center gap-2">
-          <div
-            className="w-2.5 h-2.5 rounded-full"
+        <div key={cat.id} className="legend-item">
+          <span
+            className="legend-dot"
             style={{ backgroundColor: cat.color }}
           />
-          <span className="text-xs font-medium" style={{ color: 'var(--text-secondary)' }}>
-            {cat.label}
-          </span>
+          <span>{cat.label}</span>
         </div>
       ))}
     </div>

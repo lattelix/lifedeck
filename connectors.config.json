@@ -1,4 +1,6 @@
 {
-  "calendar": { "enabled": true },
-  "github": { "enabled": true, "username": "lattelix" }
+  "calendar": { "enabled": false },
+  "github": { "enabled": true, "username": "lattelix" },
+  "leetcode": { "enabled": true, "username": "lattelix" },
+  "codewars": { "enabled": true, "username": "lattelix" }
 }

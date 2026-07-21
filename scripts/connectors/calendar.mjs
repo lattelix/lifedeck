@@ -97,7 +97,20 @@ export async function collect() {
       date: local.toISOString().split('T')[0],
     });
   }
-  const boardItems = items.map(({ keywords, ...rest }) => rest);
+  const boardItems = items.map(item => ({
+    id: item.id,
+    label: item.label,
+    categoryId: item.categoryId,
+    sourceId: item.sourceId,
+  }));
   console.log(`[calendar] ${activities.length} activities, ${boardItems.length} items (mock)`);
-  return { source: meta, items: boardItems, activities };
+  return {
+    source: {
+      ...meta,
+      status: activities.length > 0 ? 'ok' : 'empty',
+      ...(activities.length > 0 ? {} : { statusMessage: 'В календаре нет опубликованных событий' }),
+    },
+    items: boardItems,
+    activities,
+  };
 }

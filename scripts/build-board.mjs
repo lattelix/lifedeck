@@ -7,6 +7,8 @@ import path from 'path';
 import { categories } from './connectors/shared.mjs';
 import * as calendar from './connectors/calendar.mjs';
 import * as github from './connectors/github.mjs';
+import * as leetcode from './connectors/leetcode.mjs';
+import * as codewars from './connectors/codewars.mjs';
 
 // ── .env loader (для опционального LLM/GITHUB_TOKEN) ──────────
 const envPath = path.join(process.cwd(), '.env');
@@ -22,7 +24,7 @@ if (fs.existsSync(envPath)) {
 }
 
 // Реестр доступных коннекторов
-const REGISTRY = { calendar, github };
+const REGISTRY = { calendar, github, leetcode, codewars };
 
 async function buildBoard() {
   const cfgPath = path.join(process.cwd(), 'connectors.config.json');
