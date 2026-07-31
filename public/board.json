@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-07-30T06:03:10.353Z"
+    "updatedAt": "2026-07-31T06:27:15.160Z"
   },
   "categories": [
     {
@@ -65,12 +65,6 @@
       "sourceId": "github"
     },
     {
-      "id": "gh-sing-box",
-      "label": "sing-box",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
       "id": "leetcode",
       "label": "LeetCode",
       "categoryId": "algorithms",
@@ -92,39 +86,6 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
-        }
-      ]
-    },
-    {
-      "date": "2026-06-30",
-      "totalMinutes": 25,
-      "byCategory": {
-        "projects": 25
-      },
-      "activities": [
-        {
-          "id": "gh_14128440980",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_14099767980",
-          "title": "Создал branch → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_11151874317",
-          "title": "★ sing-box",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-sing-box",
-          "minutes": 5
         }
       ]
     },
