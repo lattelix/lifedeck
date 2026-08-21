@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-08-20T04:03:35.191Z"
+    "updatedAt": "2026-08-21T04:06:24.611Z"
   },
   "categories": [
     {
@@ -41,7 +41,8 @@
       "id": "github",
       "label": "GitHub",
       "url": "https://github.com/lattelix",
-      "status": "ok"
+      "status": "empty",
+      "statusMessage": "За доступный период публичных событий не найдено"
     },
     {
       "id": "leetcode",
@@ -58,12 +59,6 @@
     }
   ],
   "items": [
-    {
-      "id": "gh-lifedeck",
-      "label": "lifedeck",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
     {
       "id": "leetcode",
       "label": "LeetCode",
@@ -86,23 +81,6 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "totalMinutes": 10,
-      "byCategory": {
-        "projects": 10
-      },
-      "activities": [
-        {
-          "id": "gh_15421401142",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
         }
       ]
     }
