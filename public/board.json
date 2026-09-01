@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-08-31T09:55:32.064Z"
+    "updatedAt": "2026-09-01T08:46:32.857Z"
   },
   "categories": [
     {
@@ -41,8 +41,7 @@
       "id": "github",
       "label": "GitHub",
       "url": "https://github.com/lattelix",
-      "status": "empty",
-      "statusMessage": "За доступный период публичных событий не найдено"
+      "status": "ok"
     },
     {
       "id": "leetcode",
@@ -59,6 +58,12 @@
     }
   ],
   "items": [
+    {
+      "id": "gh-druzhba-notes-practice",
+      "label": "druzhba-notes-practice",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
     {
       "id": "leetcode",
       "label": "LeetCode",
@@ -81,6 +86,40 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "totalMinutes": 10,
+      "byCategory": {
+        "projects": 10
+      },
+      "activities": [
+        {
+          "id": "gh_19565537128",
+          "title": "Создал branch → druzhba-notes-practice",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-druzhba-notes-practice",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "totalMinutes": 10,
+      "byCategory": {
+        "projects": 10
+      },
+      "activities": [
+        {
+          "id": "gh_19631827320",
+          "title": "Push → druzhba-notes-practice (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-druzhba-notes-practice",
+          "minutes": 10
         }
       ]
     }
