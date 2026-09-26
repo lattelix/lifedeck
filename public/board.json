@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-09-25T08:56:59.773Z"
+    "updatedAt": "2026-09-26T08:43:14.669Z"
   },
   "categories": [
     {
@@ -58,6 +58,12 @@
     }
   ],
   "items": [
+    {
+      "id": "gh-pochta",
+      "label": "Pochta",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
     {
       "id": "gh-blanchard",
       "label": "Blanchard",
@@ -151,6 +157,23 @@
           "sourceId": "github",
           "itemId": "gh-blanchard",
           "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "totalMinutes": 5,
+      "byCategory": {
+        "projects": 5
+      },
+      "activities": [
+        {
+          "id": "gh_15777893478",
+          "title": "★ Pochta",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-pochta",
+          "minutes": 5
         }
       ]
     }
