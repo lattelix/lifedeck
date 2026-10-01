@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-09-30T09:50:50.680Z"
+    "updatedAt": "2026-10-01T10:18:26.241Z"
   },
   "categories": [
     {
@@ -98,23 +98,6 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
-        }
-      ]
-    },
-    {
-      "date": "2026-08-31",
-      "totalMinutes": 10,
-      "byCategory": {
-        "projects": 10
-      },
-      "activities": [
-        {
-          "id": "gh_19565537128",
-          "title": "Создал branch → druzhba-notes-practice",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-druzhba-notes-practice",
-          "minutes": 10
         }
       ]
     },
