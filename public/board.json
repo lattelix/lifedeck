@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-01T10:18:26.241Z"
+    "updatedAt": "2026-10-02T09:55:27.980Z"
   },
   "categories": [
     {
@@ -59,6 +59,18 @@
   ],
   "items": [
     {
+      "id": "gh-netgrow-academic",
+      "label": "netgrow-academic",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
+      "id": "gh-v0-portfolio-page",
+      "label": "v0-portfolio-page",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
       "id": "gh-pochta",
       "label": "Pochta",
       "categoryId": "projects",
@@ -67,12 +79,6 @@
     {
       "id": "gh-blanchard",
       "label": "Blanchard",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
-      "id": "gh-druzhba-notes-practice",
-      "label": "druzhba-notes-practice",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -98,31 +104,6 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
-        }
-      ]
-    },
-    {
-      "date": "2026-09-01",
-      "totalMinutes": 20,
-      "byCategory": {
-        "projects": 20
-      },
-      "activities": [
-        {
-          "id": "gh_19709877312",
-          "title": "Push → druzhba-notes-practice (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-druzhba-notes-practice",
-          "minutes": 10
-        },
-        {
-          "id": "gh_19631827320",
-          "title": "Push → druzhba-notes-practice (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-druzhba-notes-practice",
-          "minutes": 10
         }
       ]
     },
@@ -174,6 +155,184 @@
           "sourceId": "github",
           "itemId": "gh-pochta",
           "minutes": 5
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "totalMinutes": 190,
+      "byCategory": {
+        "projects": 190
+      },
+      "activities": [
+        {
+          "id": "gh_22756531102",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22755694953",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22755224400",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22754348256",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22753766421",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22753423512",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22752978801",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22716014612",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22712505312",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22711795057",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22711445912",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22710883636",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22710850533",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22710807227",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22710608253",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22709762557",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22700839509",
+          "title": "Создал branch → netgrow-academic",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22697697501",
+          "title": "Создал branch → netgrow-academic",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22682843085",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "totalMinutes": 30,
+      "byCategory": {
+        "projects": 30
+      },
+      "activities": [
+        {
+          "id": "gh_16258531469",
+          "title": "PR opened → netgrow-academic",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 30
         }
       ]
     }
