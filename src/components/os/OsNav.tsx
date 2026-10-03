@@ -9,6 +9,7 @@ const items = [
   { href: '/os/protocols', label: 'Protocols' },
   { href: '/os/capture', label: 'Capture' },
   { href: '/os/review', label: 'Review' },
+  { href: '/os/knowledge', label: 'Knowledge' },
   { href: '/os/integrations', label: 'Integrations' },
 ];
 
