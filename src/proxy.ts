@@ -13,6 +13,17 @@ function unauthorized(message = 'Authentication required.') {
 }
 
 export function proxy(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
+  const host = request.headers.get('host')?.split(':')[0] || '';
+  const osHost = process.env.OS_HOST || 'os.lattelix.ru';
+
+  if (pathname === '/' && host === osHost) {
+    return NextResponse.redirect(new URL('/os', request.url));
+  }
+
+  const protectedPath = pathname.startsWith('/os') || pathname.startsWith('/api/os');
+  if (!protectedPath) return NextResponse.next();
+
   const username = process.env.OS_USERNAME;
   const password = process.env.OS_PASSWORD;
 
@@ -49,5 +60,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/os/:path*', '/api/os/:path*'],
+  matcher: ['/', '/os/:path*', '/api/os/:path*'],
 };
