@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { CreateDailyButton } from '@/components/os/CreateDailyButton';
 import { MarkdownView } from '@/components/os/MarkdownView';
 import {
   getVaultFile,
@@ -71,7 +72,8 @@ export default async function TodayPage() {
       ) : (
         <section className="os-card os-warning">
           <strong>No Daily note for {date}</strong>
-          <p>Create <code>{dailyPath}</code> in Obsidian, or use the daily template.</p>
+          <p>Generate it from the current Obsidian daily template.</p>
+          <CreateDailyButton />
         </section>
       )}
 
@@ -84,7 +86,11 @@ export default async function TodayPage() {
             </div>
             <Link href="/os/capture">Capture something →</Link>
           </div>
-          {dailyParsed ? <MarkdownView markdown={dailyParsed.body} /> : null}
+          {dailyParsed ? (
+            <MarkdownView markdown={dailyParsed.body} />
+          ) : (
+            <p className="os-muted">Create the Daily note above to start today&apos;s operating loop.</p>
+          )}
         </section>
 
         <section className="os-card">
