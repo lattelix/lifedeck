@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Personal OS — LifeDeck',
   description: 'Private operating interface for protocols, capture and review.',
   robots: { index: false, follow: false },
+  manifest: '/os/manifest.webmanifest',
 };
 
 export default function OsLayout({ children }: { children: React.ReactNode }) {
