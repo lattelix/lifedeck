@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CreateDailyButton } from '@/components/os/CreateDailyButton';
+import { DailyStateForm } from '@/components/os/DailyStateForm';
 import { MarkdownView } from '@/components/os/MarkdownView';
 import {
   getVaultFile,
@@ -62,13 +63,22 @@ export default async function TodayPage() {
         <p>Calendar gives the time. The vault gives the rules. This page brings the current operating state together.</p>
       </header>
 
-      {dailyParsed ? (
-        <section className="os-metric-grid">
-          <Metric label="Mode" value={value(dailyParsed.frontmatter.protocol_mode)} />
-          <Metric label="Top 1" value={value(dailyParsed.frontmatter.top_1)} />
-          <Metric label="Energy" value={value(dailyParsed.frontmatter.energy)} />
-          <Metric label="Focus h" value={value(dailyParsed.frontmatter.deep_work_hours)} />
-        </section>
+      {dailyParsed && daily ? (
+        <>
+          <section className="os-metric-grid">
+            <Metric label="Mode" value={value(dailyParsed.frontmatter.protocol_mode)} />
+            <Metric label="Top 1" value={value(dailyParsed.frontmatter.top_1)} />
+            <Metric label="Energy" value={value(dailyParsed.frontmatter.energy)} />
+            <Metric label="Focus h" value={value(dailyParsed.frontmatter.deep_work_hours)} />
+          </section>
+          <DailyStateForm
+            path={daily.path}
+            sha={daily.sha}
+            initialMode={String(dailyParsed.frontmatter.protocol_mode || '')}
+            initialTop1={String(dailyParsed.frontmatter.top_1 || '')}
+            initialEnergy={Number(dailyParsed.frontmatter.energy) || 3}
+          />
+        </>
       ) : (
         <section className="os-card os-warning">
           <strong>No Daily note for {date}</strong>
