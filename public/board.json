@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-02T09:55:27.980Z"
+    "updatedAt": "2026-10-03T09:17:29.360Z"
   },
   "categories": [
     {
@@ -59,14 +59,20 @@
   ],
   "items": [
     {
-      "id": "gh-netgrow-academic",
-      "label": "netgrow-academic",
+      "id": "gh-v0-portfolio-page",
+      "label": "v0-portfolio-page",
       "categoryId": "projects",
       "sourceId": "github"
     },
     {
-      "id": "gh-v0-portfolio-page",
-      "label": "v0-portfolio-page",
+      "id": "gh-lifedeck",
+      "label": "lifedeck",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
+      "id": "gh-netgrow-academic",
+      "label": "netgrow-academic",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -160,11 +166,83 @@
     },
     {
       "date": "2026-10-01",
-      "totalMinutes": 190,
+      "totalMinutes": 280,
       "byCategory": {
-        "projects": 190
+        "projects": 280
       },
       "activities": [
+        {
+          "id": "gh_22868739620",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22866881420",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22866570355",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861726221",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22859646116",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22859640022",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22851595648",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22851342575",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22828525286",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
         {
           "id": "gh_22756531102",
           "title": "Push → v0-portfolio-page (1 commits)",
@@ -321,11 +399,139 @@
     },
     {
       "date": "2026-10-02",
-      "totalMinutes": 30,
+      "totalMinutes": 210,
       "byCategory": {
-        "projects": 30
+        "projects": 210
       },
       "activities": [
+        {
+          "id": "gh_22821408185",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821370268",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821362961",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821302696",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821290519",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821277808",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821264838",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821221680",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22821145903",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16301376270",
+          "title": "PR merged → netgrow-academic",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 30
+        },
+        {
+          "id": "gh_22817928944",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22817834195",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22817831019",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22817784766",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22817781671",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22817749292",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
         {
           "id": "gh_16258531469",
           "title": "PR opened → netgrow-academic",
@@ -333,6 +539,247 @@
           "sourceId": "github",
           "itemId": "gh-netgrow-academic",
           "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "totalMinutes": 370,
+      "byCategory": {
+        "projects": 370
+      },
+      "activities": [
+        {
+          "id": "gh_16330547487",
+          "title": "PR merged → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16330514458",
+          "title": "PR opened → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_22862601302",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862581071",
+          "title": "Создал branch → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16330453318",
+          "title": "PR merged → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_22862401664",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862392562",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16330381183",
+          "title": "PR opened → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_22862255387",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862230249",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862147476",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862124670",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862046284",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862028273",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22862014724",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861964333",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861958934",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861907603",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861871566",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861860083",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861810573",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861799403",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861627732",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861585744",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861550253",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861498242",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861485617",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861479385",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22861235934",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
         }
       ]
     }
