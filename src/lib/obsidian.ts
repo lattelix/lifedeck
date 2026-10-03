@@ -213,6 +213,43 @@ export function parseNote(content: string): ParsedNote {
   return { frontmatter, body };
 }
 
+
+function serializeFrontmatterScalar(
+  value: string | number | boolean | null,
+) {
+  if (value === null || value === '') return '';
+  if (typeof value === 'string') return JSON.stringify(value);
+  return String(value);
+}
+
+export function patchFrontmatter(
+  content: string,
+  updates: Record<string, string | number | boolean | null>,
+) {
+  const normalized = content.replace(/\r\n/g, '\n');
+  if (!normalized.startsWith('---\n')) {
+    throw new Error('Cannot patch note without YAML frontmatter.');
+  }
+
+  const end = normalized.indexOf('\n---\n', 4);
+  if (end === -1) throw new Error('Cannot find the end of YAML frontmatter.');
+
+  const lines = normalized.slice(4, end).split('\n');
+
+  for (const [key, value] of Object.entries(updates)) {
+    const replacement = `${key}: ${serializeFrontmatterScalar(value)}`;
+    const index = lines.findIndex(line => line.startsWith(`${key}:`));
+
+    if (index >= 0) {
+      lines[index] = replacement;
+    } else {
+      lines.push(replacement);
+    }
+  }
+
+  return `---\n${lines.join('\n')}\n---\n${normalized.slice(end + 5)}`;
+}
+
 export function todayInOsTimezone() {
   const timeZone = process.env.OS_TIME_ZONE || 'Europe/Moscow';
   return new Intl.DateTimeFormat('en-CA', {
