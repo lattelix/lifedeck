@@ -120,9 +120,5 @@ export function MarkdownView({ markdown }: MarkdownViewProps) {
 
   flushList();
 
-  if (code) {
-    nodes.push(<pre key="code-tail"><code>{code.join('\n')}</code></pre>);
-  }
-
   return <article className="os-markdown">{nodes}</article>;
 }
