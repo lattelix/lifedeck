@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { CreateDailyButton } from '@/components/os/CreateDailyButton';
 import { DailyStateForm } from '@/components/os/DailyStateForm';
 import { MarkdownView } from '@/components/os/MarkdownView';
+import { isGoogleCalendarConfigured, listCalendarEvents } from '@/lib/google-calendar';
 import {
   getVaultFile,
   isObsidianConfigured,
@@ -55,6 +56,13 @@ export default async function TodayPage() {
   const dailyParsed = daily ? parseNote(daily.content) : null;
   const protocolParsed = protocol ? parseNote(protocol.content) : null;
 
+  const calendarEvents = isGoogleCalendarConfigured()
+    ? await listCalendarEvents(
+        new Date(),
+        new Date(Date.now() + 24 * 60 * 60 * 1000),
+      ).catch(() => [])
+    : [];
+
   return (
     <div className="os-page">
       <header className="os-page-header">
@@ -86,6 +94,37 @@ export default async function TodayPage() {
           <CreateDailyButton />
         </section>
       )}
+
+      <section className="os-card">
+        <div className="os-section-heading">
+          <div>
+            <p className="os-eyebrow">Next 24 hours</p>
+            <h2>Calendar</h2>
+          </div>
+          <Link href="/os/calendar">Open calendar →</Link>
+        </div>
+        {calendarEvents.length > 0 ? (
+          <ol className="os-calendar-list">
+            {calendarEvents.slice(0, 4).map(event => (
+              <li className="os-calendar-event" key={`${event.calendarId}-${event.id}`}>
+                <div className="os-calendar-time">
+                  <strong>{formatCalendarTime(event.start, event.allDay)}</strong>
+                </div>
+                <div className="os-calendar-copy">
+                  <span className="os-chip">{event.calendarLabel}</span>
+                  <h3>{event.summary}</h3>
+                </div>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <p className="os-muted">
+            {isGoogleCalendarConfigured()
+              ? 'No upcoming events in the next 24 hours.'
+              : 'Connect Google Calendar in Integrations to compile time into Today.'}
+          </p>
+        )}
+      </section>
 
       <div className="os-two-column">
         <section className="os-card">
@@ -120,6 +159,16 @@ export default async function TodayPage() {
       </div>
     </div>
   );
+}
+
+function formatCalendarTime(value: string, allDay: boolean) {
+  if (allDay) return value;
+
+  return new Intl.DateTimeFormat('ru-RU', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: process.env.OS_TIME_ZONE || 'Europe/Moscow',
+  }).format(new Date(value));
 }
 
 function Metric({ label, value }: { label: string; value: string }) {
