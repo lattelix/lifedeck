@@ -35,3 +35,29 @@ consumes the contract and never contains source-specific parsing logic.
 When OAuth and private data arrive, move generated activity from Git to a small
 database with encrypted credentials and explicit publication state. Do not add
 that infrastructure before the public MVP requires it.
+
+
+## Personal OS implementation status
+
+Implemented on `feat/personal-os`:
+
+- protected `/os` workspace;
+- Today state from Obsidian Daily notes;
+- create missing Daily notes from the vault template;
+- edit protocol mode, energy and Top 1;
+- Universal Daily Protocol read/edit;
+- Capture -> `00_Inbox`;
+- Review from recent Daily notes;
+- Knowledge view for selected vault context plus Projects/Areas index;
+- server-side Obsidian read/write connector;
+- Google Calendar server connector with 7-day timeline and event creation;
+- PWA manifest and responsive private app shell;
+- CI for lint + production build.
+
+Still intentionally pending:
+
+- interactive Google OAuth onboarding (current connector accepts server-side refresh-token credentials);
+- automated Calendar Compiler / replan engine;
+- voice transcription and AI routing;
+- runtime database/cache for multi-user or realtime workloads;
+- proper account authentication beyond the current single-user Basic Auth gate.
