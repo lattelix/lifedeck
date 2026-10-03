@@ -4,20 +4,25 @@ interface MarkdownViewProps {
   markdown: string;
 }
 
-function inline(text: string): ReactNode {
-  const parts = text.split(/(\*\*[^*]+\*\*|\`[^\`]+\`|\[\[[^\]]+\]\])/g);
+function inline(text: string): ReactNode[] {
+  const parts = text.split(/(\*\*.*?\*\*|`.*?`|\[\[.*?\]\])/g);
 
-  return parts.map((part, index) => {
+  return parts.filter(Boolean).map((part, index) => {
+    const key = `${index}-${part.slice(0, 24)}`;
+
     if (part.startsWith('**') && part.endsWith('**')) {
-      return <strong key={index}>{part.slice(2, -2)}</strong>;
+      return <strong key={key}>{part.slice(2, -2)}</strong>;
     }
+
     if (part.startsWith('`') && part.endsWith('`')) {
-      return <code key={index}>{part.slice(1, -1)}</code>;
+      return <code key={key}>{part.slice(1, -1)}</code>;
     }
+
     if (part.startsWith('[[') && part.endsWith(']]')) {
-      return <span className="os-wikilink" key={index}>{part.slice(2, -2)}</span>;
+      return <span className="os-wikilink" key={key}>{part.slice(2, -2)}</span>;
     }
-    return part;
+
+    return <span key={key}>{part}</span>;
   });
 }
 
@@ -30,12 +35,17 @@ export function MarkdownView({ markdown }: MarkdownViewProps) {
 
   const flushList = () => {
     if (list.length === 0) return;
-    const Tag = ordered ? 'ol' : 'ul';
+
+    const items = list.map((item, index) => (
+      <li key={`${index}-${item.slice(0, 32)}`}>{inline(item)}</li>
+    ));
+
     nodes.push(
-      <Tag key={`list-${nodes.length}`}>
-        {list.map((item, index) => <li key={index}>{inline(item)}</li>)}
-      </Tag>,
+      ordered
+        ? <ol key={`list-${nodes.length}`}>{items}</ol>
+        : <ul key={`list-${nodes.length}`}>{items}</ul>,
     );
+
     list = [];
     ordered = false;
   };
@@ -98,8 +108,7 @@ export function MarkdownView({ markdown }: MarkdownViewProps) {
       return;
     }
 
-    const divider = /^---+$/.test(line.trim());
-    if (divider) {
+    if (/^---+$/.test(line.trim())) {
       flushList();
       nodes.push(<hr key={index} />);
       return;
