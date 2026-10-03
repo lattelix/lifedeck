@@ -1,4 +1,4 @@
-import type { NextRequest } from 'next/server';
+import { NextResponse, type NextRequest } from 'next/server';
 
 const REALM = 'LifeDeck Personal OS';
 
@@ -17,7 +17,7 @@ export function proxy(request: NextRequest) {
   const password = process.env.OS_PASSWORD;
 
   if (!username || !password) {
-    if (process.env.NODE_ENV !== 'production') return;
+    if (process.env.NODE_ENV !== 'production') return NextResponse.next();
     return new Response(
       'Personal OS is disabled until OS_USERNAME and OS_PASSWORD are configured.',
       {
@@ -44,6 +44,8 @@ export function proxy(request: NextRequest) {
   } catch {
     return unauthorized();
   }
+
+  return NextResponse.next();
 }
 
 export const config = {
