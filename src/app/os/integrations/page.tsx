@@ -1,9 +1,15 @@
+import {
+  getConfiguredCalendars,
+  isGoogleCalendarConfigured,
+} from '@/lib/google-calendar';
 import { isObsidianConfigured, vaultRepoName } from '@/lib/obsidian';
 
 export const dynamic = 'force-dynamic';
 
 export default function IntegrationsPage() {
   const obsidian = isObsidianConfigured();
+  const googleCalendar = isGoogleCalendarConfigured();
+  const calendars = getConfiguredCalendars();
 
   return (
     <div className="os-page">
@@ -22,9 +28,9 @@ export default function IntegrationsPage() {
         />
         <Integration
           title="Google Calendar"
-          subtitle="Calendar compiler"
-          status="next"
-          description="The existing calendar adapter is still mock-only. OAuth read/write is the next runtime integration."
+          subtitle={`${calendars.length} configured calendar${calendars.length === 1 ? '' : 's'}`}
+          status={googleCalendar ? 'connected' : 'needs setup'}
+          description="Server-side OAuth refresh-token connector. Personal OS can read the next seven days and create new time blocks."
         />
         <Integration
           title="GitHub"
@@ -47,6 +53,8 @@ export default function IntegrationsPage() {
           <li><code>GITHUB_OBSIDIAN_TOKEN</code> reads and writes the private vault.</li>
           <li><code>OBSIDIAN_REPO</code> optionally overrides <code>lattelix/obsidian</code>.</li>
           <li><code>OS_TIME_ZONE</code> optionally overrides <code>Europe/Moscow</code>.</li>
+          <li><code>GOOGLE_CALENDAR_CLIENT_ID</code>, <code>GOOGLE_CALENDAR_CLIENT_SECRET</code> and <code>GOOGLE_CALENDAR_REFRESH_TOKEN</code> enable Calendar read/write.</li>
+          <li><code>GOOGLE_CALENDAR_IDS</code> limits Calendar access to an explicit semicolon-separated set of <code>label=id</code> entries. If omitted, the connector uses <code>primary</code>.</li>
         </ul>
       </section>
     </div>
