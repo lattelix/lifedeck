@@ -152,3 +152,44 @@ LLM используется только опционально для клас
 - `calendar` пока mock/dev-источник и выключен в production-конфиге.
 - Фильтры работают только на клиенте (localStorage) — серверный рендер всегда показывает все данные до гидратации.
 - При множестве категорий с одинаковыми минутами доминантный цвет ячейки выбирается по первому в алфавитном порядке.
+
+
+## Personal OS (private workspace)
+
+Ветка `feat/personal-os` добавляет приватную операционную поверхность поверх существующего публичного LifeDeck.
+
+Маршруты:
+
+- `/os` — Today;
+- `/os/protocols` — Universal Daily Protocol + редактирование Markdown;
+- `/os/capture` — быстрый Capture в `00_Inbox` приватного Obsidian vault;
+- `/os/review` — последние Daily notes;
+- `/os/integrations` — статус интеграций и runtime configuration.
+
+### Архитектура данных
+
+Не переносить приватный Obsidian vault в этот публичный репозиторий.
+
+- `lattelix/obsidian` — private source of truth для протоколов, Daily, Inbox, Projects и knowledge;
+- `lattelix/lifedeck` — web/PWA interface и orchestration;
+- LifeDeck читает/пишет Markdown в vault только server-side через GitHub Contents API.
+
+### Environment
+
+Скопировать `.env.example` и задать:
+
+```env
+OS_USERNAME=...
+OS_PASSWORD=...
+OS_TIME_ZONE=Europe/Moscow
+OBSIDIAN_REPO=lattelix/obsidian
+GITHUB_OBSIDIAN_TOKEN=...
+```
+
+Для `GITHUB_OBSIDIAN_TOKEN` использовать минимально необходимый fine-grained token с Contents read/write только для приватного vault.
+
+Без `OS_USERNAME` и `OS_PASSWORD` private workspace намеренно возвращает 503 в production. В local development auth можно не задавать.
+
+### Security boundary
+
+Никакие приватные Obsidian notes не попадают в `public/board.json` и не должны попадать в client bundle. Работа с vault выполняется server-side.
