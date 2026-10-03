@@ -23,6 +23,8 @@ export interface ParsedNote {
   body: string;
 }
 
+type FrontmatterValue = ParsedNote['frontmatter'][string];
+
 function repoParts() {
   const value = process.env.OBSIDIAN_REPO || DEFAULT_REPO;
   const [owner, repo] = value.split('/');
@@ -60,11 +62,12 @@ function endpoint(path: string) {
 }
 
 async function githubFetch(url: string, init?: RequestInit) {
+  const method = init?.method?.toUpperCase() || 'GET';
   const response = await fetch(url, {
     ...init,
     cache: 'no-store',
     headers: {
-      ...headers(Boolean(init?.method && init.method !== 'GET')),
+      ...headers(method !== 'GET'),
       ...(init?.headers || {}),
     },
   });
@@ -110,12 +113,14 @@ export async function listVaultDirectory(path: string): Promise<VaultEntry[]> {
     throw new Error(`Vault path is not a directory: ${path}`);
   }
 
-  return data.map(item => ({
-    name: item.name,
-    path: item.path,
-    sha: item.sha,
-    type: item.type,
-  }));
+  return data
+    .filter(item => item.type === 'file' || item.type === 'dir')
+    .map(item => ({
+      name: item.name,
+      path: item.path,
+      sha: item.sha,
+      type: item.type,
+    }));
 }
 
 export async function createVaultFile(path: string, content: string, message: string) {
@@ -148,32 +153,36 @@ export async function updateVaultFile(
   return response.json();
 }
 
-function scalar(value: string): string | number | boolean | null {
+function scalar(value: string): FrontmatterValue {
   const trimmed = value.trim();
   if (trimmed === '') return null;
   if (trimmed === 'true') return true;
   if (trimmed === 'false') return false;
   if (/^-?\d+(\.\d+)?$/.test(trimmed)) return Number(trimmed);
+
   if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
     return trimmed
       .slice(1, -1)
       .split(',')
-      .map(item => item.trim())
-      .filter(Boolean) as unknown as string;
+      .map(item => item.trim().replace(/^["']|["']$/g, ''))
+      .filter(Boolean);
   }
+
   return trimmed.replace(/^["']|["']$/g, '');
 }
 
 export function parseNote(content: string): ParsedNote {
-  if (!content.startsWith('---\n')) {
-    return { frontmatter: {}, body: content.trim() };
+  const normalized = content.replace(/\r\n/g, '\n');
+
+  if (!normalized.startsWith('---\n')) {
+    return { frontmatter: {}, body: normalized.trim() };
   }
 
-  const end = content.indexOf('\n---\n', 4);
-  if (end === -1) return { frontmatter: {}, body: content.trim() };
+  const end = normalized.indexOf('\n---\n', 4);
+  if (end === -1) return { frontmatter: {}, body: normalized.trim() };
 
-  const block = content.slice(4, end);
-  const body = content.slice(end + 5).trim();
+  const block = normalized.slice(4, end);
+  const body = normalized.slice(end + 5).trim();
   const frontmatter: ParsedNote['frontmatter'] = {};
   let activeArrayKey: string | null = null;
 
@@ -181,8 +190,8 @@ export function parseNote(content: string): ParsedNote {
     const arrayItem = line.match(/^\s+-\s+(.+)$/);
     if (arrayItem && activeArrayKey) {
       const current = frontmatter[activeArrayKey];
-      const next = Array.isArray(current) ? current : [];
-      next.push(arrayItem[1].trim());
+      const next = Array.isArray(current) ? [...current] : [];
+      next.push(arrayItem[1].trim().replace(/^["']|["']$/g, ''));
       frontmatter[activeArrayKey] = next;
       continue;
     }
@@ -198,16 +207,7 @@ export function parseNote(content: string): ParsedNote {
     }
 
     activeArrayKey = null;
-    const parsed = scalar(raw);
-    if (typeof parsed === 'string' && parsed.startsWith('[') && parsed.endsWith(']')) {
-      frontmatter[key] = parsed
-        .slice(1, -1)
-        .split(',')
-        .map(item => item.trim())
-        .filter(Boolean);
-    } else {
-      frontmatter[key] = parsed;
-    }
+    frontmatter[key] = scalar(raw);
   }
 
   return { frontmatter, body };
