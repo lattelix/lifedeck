@@ -56,11 +56,12 @@ export default async function TodayPage() {
   const dailyParsed = daily ? parseNote(daily.content) : null;
   const protocolParsed = protocol ? parseNote(protocol.content) : null;
 
+  const calendarStart = new Date();
+  const calendarEnd = new Date(calendarStart);
+  calendarEnd.setDate(calendarEnd.getDate() + 1);
+
   const calendarEvents = isGoogleCalendarConfigured()
-    ? await listCalendarEvents(
-        new Date(),
-        new Date(Date.now() + 24 * 60 * 60 * 1000),
-      ).catch(() => [])
+    ? await listCalendarEvents(calendarStart, calendarEnd).catch(() => [])
     : [];
 
   return (
