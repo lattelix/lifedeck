@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-03T09:17:29.360Z"
+    "updatedAt": "2026-10-04T09:57:22.149Z"
   },
   "categories": [
     {
@@ -59,12 +59,6 @@
   ],
   "items": [
     {
-      "id": "gh-v0-portfolio-page",
-      "label": "v0-portfolio-page",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
       "id": "gh-lifedeck",
       "label": "lifedeck",
       "categoryId": "projects",
@@ -73,6 +67,12 @@
     {
       "id": "gh-netgrow-academic",
       "label": "netgrow-academic",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
+      "id": "gh-v0-portfolio-page",
+      "label": "v0-portfolio-page",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -399,11 +399,35 @@
     },
     {
       "date": "2026-10-02",
-      "totalMinutes": 210,
+      "totalMinutes": 240,
       "byCategory": {
-        "projects": 210
+        "projects": 240
       },
       "activities": [
+        {
+          "id": "gh_22953591086",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22915463714",
+          "title": "Создал branch → netgrow-academic",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22874971081",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
         {
           "id": "gh_22821408185",
           "title": "Push → lifedeck (1 commits)",
@@ -544,11 +568,75 @@
     },
     {
       "date": "2026-10-03",
-      "totalMinutes": 370,
+      "totalMinutes": 450,
       "byCategory": {
-        "projects": 370
+        "projects": 450
       },
       "activities": [
+        {
+          "id": "gh_22908910663",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22908640687",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22907711024",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22903734184",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22903421676",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22903305850",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22902879593",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22902750054",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
         {
           "id": "gh_16330547487",
           "title": "PR merged → lifedeck",
