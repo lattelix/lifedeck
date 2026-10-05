@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-04T09:57:22.149Z"
+    "updatedAt": "2026-10-05T10:40:09.578Z"
   },
   "categories": [
     {
@@ -399,11 +399,67 @@
     },
     {
       "date": "2026-10-02",
-      "totalMinutes": 240,
+      "totalMinutes": 310,
       "byCategory": {
-        "projects": 240
+        "projects": 310
       },
       "activities": [
+        {
+          "id": "gh_22975412286",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22975323817",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22975247593",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22971726693",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22965728098",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22962432803",
+          "title": "Push → netgrow-academic (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-netgrow-academic",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22962200399",
+          "title": "Создал branch → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
         {
           "id": "gh_22953591086",
           "title": "Push → lifedeck (1 commits)",
@@ -568,11 +624,75 @@
     },
     {
       "date": "2026-10-03",
-      "totalMinutes": 450,
+      "totalMinutes": 530,
       "byCategory": {
-        "projects": 450
+        "projects": 530
       },
       "activities": [
+        {
+          "id": "gh_23011011840",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23010922685",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23010725135",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23000350564",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22986652470",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22986388522",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22986194158",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_22985783768",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
         {
           "id": "gh_22908910663",
           "title": "Push → lifedeck (1 commits)",
