@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-05T10:40:09.578Z"
+    "updatedAt": "2026-10-06T10:33:20.080Z"
   },
   "categories": [
     {
@@ -83,12 +83,6 @@
       "sourceId": "github"
     },
     {
-      "id": "gh-blanchard",
-      "label": "Blanchard",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
       "id": "leetcode",
       "label": "LeetCode",
       "categoryId": "algorithms",
@@ -110,23 +104,6 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
-        }
-      ]
-    },
-    {
-      "date": "2026-09-05",
-      "totalMinutes": 10,
-      "byCategory": {
-        "projects": 10
-      },
-      "activities": [
-        {
-          "id": "gh_20144551779",
-          "title": "Push → Blanchard (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-blanchard",
-          "minutes": 10
         }
       ]
     },
@@ -988,6 +965,71 @@
           "sourceId": "github",
           "itemId": "gh-lifedeck",
           "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "totalMinutes": 150,
+      "byCategory": {
+        "projects": 150
+      },
+      "activities": [
+        {
+          "id": "gh_16529797020",
+          "title": "PR opened → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_23150364272",
+          "title": "Создал branch → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16527820219",
+          "title": "PR merged → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16527127560",
+          "title": "PR opened → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_23147911612",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16526075932",
+          "title": "IssueCommentEvent → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16525995010",
+          "title": "PR merged → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
         }
       ]
     }
