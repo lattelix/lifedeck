@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Spline_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeScript } from "@/components/ThemeScript";
+import { ThemeController } from "@/components/ThemeController";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -12,6 +13,14 @@ const spline = Spline_Sans({
   variable: "--font-spline",
   subsets: ["latin", "latin-ext"],
 });
+
+export const viewport: Viewport = {
+  colorScheme: 'light dark',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f4f5f7' },
+    { media: '(prefers-color-scheme: dark)', color: '#161719' },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "Alex — живой профиль",
@@ -45,6 +54,7 @@ export default function RootLayout({
         <ThemeScript />
       </head>
       <body className="font-sans antialiased">
+        <ThemeController />
         {children}
       </body>
     </html>

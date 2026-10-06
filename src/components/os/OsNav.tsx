@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { ThemeSwitcher } from './ThemeSwitcher';
 import { usePathname } from 'next/navigation';
 
 const items = [
@@ -43,6 +44,8 @@ export function OsNav() {
           );
         })}
       </nav>
+
+      <ThemeSwitcher />
 
       <div className="os-sidebar-footer">
         <Link href="/">Public profile ↗</Link>

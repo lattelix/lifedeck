@@ -1,0 +1,91 @@
+/* Personal OS surfaces use the shared resolved theme, never inverted content. */
+.os-shell {
+  --os-action: #6656b8;
+  --os-action-hover: #52429f;
+  --os-on-action: #fff;
+  --os-focus: #6656b8;
+  --os-field-border: #828997;
+  --text-muted: #626b78;
+  --os-placeholder: #616773;
+  --os-warning-bg: #fff8ec;
+  --os-error-bg: #fff2f2;
+}
+.dark .os-shell {
+  --bg-primary: #161719;
+  --bg-panel: #1e2025;
+  --bg-muted: #282b33;
+  --bg-hover: #302c44;
+  --text-primary: #f2f3f5;
+  --text-secondary: #bdc1ca;
+  --text-muted: #9ca3b1;
+  --border-color: #353944;
+  --border-strong: #555c6a;
+  --accent: #bbacff;
+  --accent-soft: #312c49;
+  --positive: #74d8b0;
+  --warning: #edb570;
+  --danger: #ff9c9c;
+  --os-action: #7160c9;
+  --os-action-hover: #7663cc;
+  --os-on-action: #fff;
+  --os-focus: #c1b3ff;
+  --os-field-border: #717887;
+  --os-placeholder: #a3abba;
+  --os-warning-bg: #29241d;
+  --os-error-bg: #302126;
+  --shadow-panel: 0 2px 8px rgb(0 0 0 / 12%);
+  color-scheme: dark;
+  color: var(--text-primary);
+}
+.os-shell { color: var(--text-primary); }
+.os-shell ::selection { background: var(--accent-soft); color: var(--text-primary); }
+.os-shell :is(button, input, select, textarea, a, summary):focus-visible {
+  outline: 2px solid var(--os-focus);
+  outline-offset: 3px;
+}
+.os-shell :is(input, select, textarea) { accent-color: var(--os-action); }
+.os-shell :is(input, textarea)::placeholder { color: var(--os-placeholder); opacity: 1; }
+.os-field :is(input, select, textarea), .os-capture-card textarea { border-color: var(--os-field-border); }
+.os-field select option { background: var(--bg-panel); color: var(--text-primary); }
+.os-shell input:autofill { box-shadow: inset 0 0 0 1000px var(--bg-muted); color: var(--text-primary); }
+.os-shell input:-webkit-autofill { -webkit-box-shadow: inset 0 0 0 1000px var(--bg-muted); -webkit-text-fill-color: var(--text-primary); }
+.os-editor { background: var(--bg-primary); }
+.os-editor-toolbar { background: var(--bg-panel); }
+.os-editor textarea { caret-color: var(--accent); }
+.os-shell :is(.os-editor-toolbar, .os-capture-actions, .os-inline-action) button,
+.os-brand-mark { background: var(--os-action); color: var(--os-on-action); }
+.os-shell :is(.os-editor-toolbar, .os-capture-actions, .os-inline-action) button:not(:disabled):hover {
+  background: var(--os-action-hover);
+}
+.os-warning { background: var(--os-warning-bg); border-color: var(--warning); }
+.os-warning :is(code, pre) { background: var(--bg-muted); }
+.os-status.error { color: var(--danger); }
+.os-nav a.active { background: var(--accent-soft); color: var(--accent); }
+.os-markdown :is(pre, code), .os-editor textarea { scrollbar-color: var(--border-strong) var(--bg-muted); }
+.os-chip { color: var(--text-secondary); }
+.os-theme-controls { display: grid; gap: 7px; padding: 20px 8px 14px; margin-top: auto; }
+.os-theme-controls > label { color: var(--text-muted); font-size: 11px; font-weight: 650; }
+.os-theme-select { position: relative; display: flex; align-items: center; }
+.os-theme-select svg { position: absolute; left: 11px; pointer-events: none; color: var(--text-secondary); }
+.os-theme-select select {
+  width: 100%; min-height: 44px; padding: 8px 24px 8px 37px;
+  border: 1px solid var(--os-field-border); border-radius: 8px;
+  background: var(--bg-muted); color: var(--text-primary); font: inherit;
+  font-size: 12px; cursor: pointer; color-scheme: inherit;
+}
+.os-theme-select select:hover { border-color: var(--accent); }
+.os-sidebar-footer { margin-top: 0; }
+@media (max-width: 720px) {
+  .os-sidebar { flex-wrap: wrap; gap: 8px; overflow: visible; padding-top: max(10px, env(safe-area-inset-top)); }
+  .os-brand { order: 0; }
+  .os-brand strong { font-size: 12px; }
+  .os-theme-controls { order: 1; margin: 0 0 0 auto; padding: 0; width: 142px; flex-shrink: 0; }
+  .os-theme-controls > label { display: none; }
+  .os-theme-select select { font-size: 12px; }
+  .os-nav { order: 2; flex: 1 1 100%; width: 100%; min-width: 0; overflow-x: auto; padding: 3px 0 5px; scrollbar-width: thin; }
+  .os-nav a { min-height: 44px; display: flex; align-items: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body, .os-shell *, .os-shell *::before, .os-shell *::after { transition: none !important; }
+}
