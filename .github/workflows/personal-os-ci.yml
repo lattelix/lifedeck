@@ -43,3 +43,6 @@ jobs:
 
       - name: Production HTTP smoke (synthetic data)
         run: pnpm test:smoke
+
+      - name: Public pages and owner cookie authentication
+        run: pnpm test:auth
