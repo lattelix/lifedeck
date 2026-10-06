@@ -1,0 +1,30 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {createRequire} from 'node:module';
+import ts from 'typescript';
+const require = createRequire(import.meta.url);
+function load(file='src/lib/auth-core.ts') {
+ const mod={exports:{}};
+ const env={OS_USERNAME:'fixture',OS_PASSWORD:'a-long-fixture-password',OS_SESSION_SECRET:'fixture-key-not-a-real-secret',NODE_ENV:'production'};
+ const ctx=vm.createContext({module:mod,exports:mod.exports,process:{env},require:n=>n==='server-only'?{}:require(n),Buffer,URL,Headers,Date,Response});
+ vm.runInContext(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,ctx);
+ return {a:mod.exports,env};
+}
+const host='os.example.com', now=1_800_000_000_000;
+test('valid credentials, wrong username, wrong password, input limits',()=>{const {a}=load();assert.equal(a.validCredentials('fixture','a-long-fixture-password'),true);for(const pair of [['other','a-long-fixture-password'],['fixture','no'],[{},'x'],['x','x'.repeat(2048)]]) assert.equal(a.validCredentials(...pair),false);});
+test('signed session validates at issue time and expires exactly',()=>{const {a}=load(), t=a.issueToken('session',host,now);assert.ok(a.verifyToken(t,'session',host,now));assert.ok(!a.verifyToken(t,'session',host,now+a.SESSION_TTL*1000));});
+test('token purpose, host and future issue time are checked',()=>{const {a}=load(),t=a.issueToken('session',host,now);assert.ok(!a.verifyToken(t,'csrf',host,now));assert.ok(!a.verifyToken(t,'session','me.example.com',now));assert.ok(!a.verifyToken(t,'session',host,now-100_000));});
+test('tampering and malformed tokens rejected',()=>{const{a}=load(),t=a.issueToken('session',host,now);for(const bad of [t+'x',t.replace(/^./,'z'),'',undefined,'a.b.c','*.*','x'.repeat(3000)])assert.ok(!a.verifyToken(bad,'session',host,now));});
+test('key or owner credential rotation invalidates existing sessions',()=>{for(const field of ['OS_PASSWORD','OS_USERNAME','OS_SESSION_SECRET']){const{a,env}=load(),t=a.issueToken('session',host,now);env[field]='changed';assert.ok(!a.verifyToken(t,'session',host,now));}});
+test('no credentials fails closed',()=>{const{a,env}=load();env.OS_PASSWORD='';assert.equal(a.authConfigured(),false);assert.equal(a.ownerAuthorized(new Headers()),false);});
+test('cookie-only authorization and duplicate cookies',()=>{const{a}=load(),t=a.issueToken('session',host);const h=new Headers({host,cookie:`${a.cookieName('session')}=${t}`});assert.ok(a.ownerAuthorized(h));h.set('cookie',`${a.cookieName('session')}=${t}; ${a.cookieName('session')}=bad`);assert.ok(!a.ownerAuthorized(h));});
+test('Basic disabled by default and explicit compatibility opt-in',()=>{const{a,env}=load(),h=new Headers({host,authorization:'Basic '+Buffer.from('fixture:a-long-fixture-password').toString('base64')});assert.ok(!a.ownerAuthorized(h));env.OS_ALLOW_BASIC_AUTH='true';assert.ok(a.ownerAuthorized(h));});
+test('session payload contains no username or credentials',()=>{const{a,env}=load(), payload=Buffer.from(a.issueToken('session',host).split('.')[0],'base64url').toString();for(const value of Object.values(env))assert.ok(!payload.includes(value));});
+test('csrf double submit and bounded expiry',()=>{const{a}=load(),t=a.issueToken('csrf',host);const request=new Request('https://'+host+'/api/auth/login',{method:'POST',headers:{host,origin:'https://'+host,'x-csrf-token':t,cookie:`${a.cookieName('csrf')}=${t}`}});assert.ok(a.csrfValid(request));request.headers.set('x-csrf-token','bad');assert.ok(!a.csrfValid(request));assert.ok(!a.verifyToken(a.issueToken('csrf',host,now),'csrf',host,now+901000));});
+for(const value of ['https://evil.example','//evil.example','/os/../../login','/os%2f..%2f','/os\\evil','/api/os','javascript:alert(1)','/login','/oscar','/os\nLocation:evil']) test(`reject unsafe returnTo ${JSON.stringify(value)}`,()=>{assert.equal(load().a.safeReturnTo(value),'/os');});
+for(const value of ['/os','/os/protocols','/os/review?week=2']) test('preserve private destination '+value,()=>assert.equal(load().a.safeReturnTo(value),value));
+test('same-origin JSON mutations accept only matching origin',()=>{const{a}=load();for(const [origin,site,ok] of [['https://'+host,'same-origin',true],['https://evil.example','cross-site',false],['https://sibling.example.com','same-site',false],['null','none',false],['http://'+host,'same-origin',false]])assert.equal(a.sameOrigin(new Request('https://'+host+'/api/os/daily',{headers:{host,origin,'sec-fetch-site':site}})),ok);});
+test('cookie production flags and bounded session length',()=>{const{a}=load(),o=a.cookieOptions(a.SESSION_TTL);assert.equal(o.httpOnly,true);assert.equal(o.secure,true);assert.equal(o.sameSite,'lax');assert.equal(o.path,'/');assert.equal(o.maxAge,43200);assert.ok(a.cookieName('session').startsWith('__Host-'));});
+test('local login limiter rejects eleventh request then expires',()=>{const{a}=load('src/lib/login-security.ts'),r=new Request('https://'+host);for(let i=0;i<10;i++) assert.ok(a.admitLogin(r,now));assert.ok(!a.admitLogin(r,now));assert.ok(a.admitLogin(r,now+900000));});

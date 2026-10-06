@@ -11,7 +11,7 @@ const dir = mkdtempSync(join(tmpdir(), 'lifedeck-theme-'));
 const modeFile = join(dir, 'mode'); writeFileSync(modeFile, 'ok');
 const base = 'http://127.0.0.1:3118';
 const server = spawn(process.execPath, ['--import', resolve('tests/fixtures/theme-preload.mjs'), 'node_modules/next/dist/bin/next', 'start', '-H', '127.0.0.1', '-p', '3118'], {
-  env: { ...process.env, NODE_ENV: 'production', OS_USERNAME: 'fixture', OS_PASSWORD: 'fixture-password', GITHUB_OBSIDIAN_TOKEN: 'fixture-token', OBSIDIAN_REPO: 'lattelix/obsidian', OS_TIME_ZONE: 'Europe/Moscow', OS_TEST_MODE_FILE: modeFile, GOOGLE_CALENDAR_CLIENT_ID: 'fixture', GOOGLE_CALENDAR_CLIENT_SECRET: 'fixture', GOOGLE_CALENDAR_REFRESH_TOKEN: 'fixture', GOOGLE_CALENDAR_IDS: 'Focus=primary' },
+  env: { ...process.env, NODE_ENV: 'production', OS_ALLOW_BASIC_AUTH: 'true', OS_USERNAME: 'fixture', OS_PASSWORD: 'fixture-password', GITHUB_OBSIDIAN_TOKEN: 'fixture-token', OBSIDIAN_REPO: 'lattelix/obsidian', OS_TIME_ZONE: 'Europe/Moscow', OS_TEST_MODE_FILE: modeFile, GOOGLE_CALENDAR_CLIENT_ID: 'fixture', GOOGLE_CALENDAR_CLIENT_SECRET: 'fixture', GOOGLE_CALENDAR_REFRESH_TOKEN: 'fixture', GOOGLE_CALENDAR_IDS: 'Focus=primary' },
   stdio: 'ignore',
 });
 let browser;

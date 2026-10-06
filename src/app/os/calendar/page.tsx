@@ -1,3 +1,4 @@
+import { requireOwnerPage } from '@/lib/owner-access';
 import { CalendarEventForm } from '@/components/os/CalendarEventForm';
 import {
   getConfiguredCalendars,
@@ -23,6 +24,7 @@ function formatDate(value: string, allDay: boolean) {
 }
 
 export default async function CalendarPage() {
+  await requireOwnerPage();
   const calendars = getConfiguredCalendars();
   const configured = isGoogleCalendarConfigured();
 

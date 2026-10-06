@@ -9,9 +9,9 @@ const modeFile = join(dir, 'mode');
 writeFileSync(modeFile, 'repository-404');
 const port = 3117;
 const base = `http://127.0.0.1:${port}`;
-const auth = { Authorization: `Basic ${Buffer.from('fixture:fixture-password').toString('base64')}` };
+const auth = { Origin: base, Authorization: `Basic ${Buffer.from('fixture:fixture-password').toString('base64')}` };
 const server = spawn(process.execPath, ['--import', resolve('tests/fixtures/github-preload.mjs'), 'node_modules/next/dist/bin/next', 'start', '-H', '127.0.0.1', '-p', String(port)], {
-  env: { ...process.env, NODE_ENV: 'production', OS_USERNAME: 'fixture', OS_PASSWORD: 'fixture-password', GITHUB_OBSIDIAN_TOKEN: 'fixture-token', OBSIDIAN_REPO: 'lattelix/obsidian', OS_TIME_ZONE: 'Europe/Moscow', OS_TEST_MODE_FILE: modeFile, GOOGLE_CALENDAR_CLIENT_ID: '', GOOGLE_CALENDAR_CLIENT_SECRET: '', GOOGLE_CALENDAR_REFRESH_TOKEN: '' },
+  env: { ...process.env, NODE_ENV: 'production', OS_ALLOW_BASIC_AUTH: 'true', OS_USERNAME: 'fixture', OS_PASSWORD: 'fixture-password', GITHUB_OBSIDIAN_TOKEN: 'fixture-token', OBSIDIAN_REPO: 'lattelix/obsidian', OS_TIME_ZONE: 'Europe/Moscow', OS_TEST_MODE_FILE: modeFile, GOOGLE_CALENDAR_CLIENT_ID: '', GOOGLE_CALENDAR_CLIENT_SECRET: '', GOOGLE_CALENDAR_REFRESH_TOKEN: '' },
   stdio: ['ignore','pipe','pipe'],
 });
 let log = ''; server.stdout.on('data', b => { log += b; }); server.stderr.on('data', b => { log += b; });

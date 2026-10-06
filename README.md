@@ -193,3 +193,7 @@ GITHUB_OBSIDIAN_TOKEN=...
 ### Security boundary
 
 Никакие приватные Obsidian notes не попадают в `public/board.json` и не должны попадать в client bundle. Работа с vault выполняется server-side.
+
+## Public landing and owner login
+
+`os.lattelix.ru/` now opens the public product landing; the app remains at `/os`. `/privacy` and `/terms` are public Google Branding documents. `/login` replaces the browser Basic Auth prompt with an owner-only cookie session, using the same `OS_USERNAME` and `OS_PASSWORD`. No public registration or Google identity login is implied. Basic Auth is disabled unless explicitly opted into with `OS_ALLOW_BASIC_AUTH=true`. See [Owner auth](docs/owner-auth.md) for security boundaries and limitations, and [Public pages](docs/public-pages.md) for Branding fields and QA.

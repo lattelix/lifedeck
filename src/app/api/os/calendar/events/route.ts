@@ -1,3 +1,4 @@
+import { guardMutation } from '@/lib/owner-access';
 import { NextResponse } from 'next/server';
 import {
   createCalendarEvent,
@@ -5,6 +6,7 @@ import {
 } from '@/lib/google-calendar';
 
 export async function POST(request: Request) {
+  const denied = guardMutation(request); if (denied) return denied;
   if (!isGoogleCalendarConfigured()) {
     return NextResponse.json(
       { error: 'Google Calendar is not configured.' },

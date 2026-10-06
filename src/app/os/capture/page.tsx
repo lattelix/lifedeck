@@ -1,3 +1,4 @@
+import { requireOwnerPage } from '@/lib/owner-access';
 import { checkVaultConnection } from '@/lib/obsidian';
 import { VaultNotice } from '@/components/os/VaultNotice';
 import { CaptureForm } from '@/components/os/CaptureForm';
@@ -5,6 +6,7 @@ import { CaptureForm } from '@/components/os/CaptureForm';
 export const dynamic = 'force-dynamic';
 
 export default async function CapturePage() {
+  await requireOwnerPage();
   const connection = await checkVaultConnection();
   return (
     <div className="os-page">

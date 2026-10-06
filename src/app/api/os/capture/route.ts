@@ -1,3 +1,4 @@
+import { guardMutation } from '@/lib/owner-access';
 import { vaultProblem } from '@/lib/obsidian';
 import { NextResponse } from 'next/server';
 import { createVaultFile, todayInOsTimezone } from '@/lib/obsidian';
@@ -7,6 +8,7 @@ function safeStamp() {
 }
 
 export async function POST(request: Request) {
+  const denied = guardMutation(request); if (denied) return denied;
   try {
     const body = await request.json();
     const text = typeof body.text === 'string' ? body.text.trim() : '';

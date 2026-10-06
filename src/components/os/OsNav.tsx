@@ -1,4 +1,5 @@
 'use client';
+import { LogoutButton } from './LogoutButton';
 
 import Link from 'next/link';
 import { ThemeSwitcher } from './ThemeSwitcher';
@@ -46,9 +47,10 @@ export function OsNav() {
       </nav>
 
       <ThemeSwitcher />
+      <LogoutButton />
 
       <div className="os-sidebar-footer">
-        <Link href="/">Public profile ↗</Link>
+        <Link href="/about">О проекте ↗</Link>
         <span>Private workspace</span>
       </div>
     </aside>

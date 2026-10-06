@@ -1,3 +1,5 @@
+import { SessionGuard } from '@/components/os/SessionGuard';
+import { requireOwnerPage } from '@/lib/owner-access';
 import './repair.css';
 import './theme.css';
 import type { Metadata } from 'next';
@@ -10,9 +12,11 @@ export const metadata: Metadata = {
   manifest: '/os/manifest.webmanifest',
 };
 
-export default function OsLayout({ children }: { children: React.ReactNode }) {
+export default async function OsLayout({ children }: { children: React.ReactNode }) {
+  await requireOwnerPage();
   return (
     <div className="os-shell">
+      <SessionGuard />
       <OsNav />
       <main className="os-main">{children}</main>
     </div>

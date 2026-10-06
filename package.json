@@ -13,7 +13,9 @@
     "validate:board": "node scripts/validate-board.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:smoke": "node tests/os-http-smoke.mjs",
-    "test:theme:browser": "node tests/theme-browser.mjs"
+    "test:theme:browser": "node tests/theme-browser.mjs",
+    "test:auth": "node tests/auth-http.mjs",
+    "test:public:browser": "node tests/public-browser.mjs"
   },
   "dependencies": {
     "next": "16.2.9",

@@ -1,3 +1,4 @@
+import { guardMutation } from '@/lib/owner-access';
 import { vaultProblem } from '@/lib/obsidian';
 import { NextResponse } from 'next/server';
 import { updateVaultFile } from '@/lib/obsidian';
@@ -12,6 +13,7 @@ function allowed(path: string) {
 }
 
 export async function PUT(request: Request) {
+  const denied = guardMutation(request); if (denied) return denied;
   try {
     const body = await request.json();
     const path = typeof body.path === 'string' ? body.path : '';
