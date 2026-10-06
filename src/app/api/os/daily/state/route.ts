@@ -1,3 +1,4 @@
+import { vaultProblem } from '@/lib/obsidian';
 import { NextResponse } from 'next/server';
 import {
   getVaultFile,
@@ -60,8 +61,8 @@ export async function PUT(request: Request) {
     });
   } catch (error) {
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : 'Unable to update Daily state.' },
-      { status: 500 },
+      { error: vaultProblem(error).message, code: vaultProblem(error).code },
+      { status: vaultProblem(error).status },
     );
   }
 }
