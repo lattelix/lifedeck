@@ -10,7 +10,9 @@
     "lint": "eslint",
     "mock": "node scripts/gen-mock-events.mjs",
     "board": "node scripts/build-board.mjs && node scripts/validate-board.mjs",
-    "validate:board": "node scripts/validate-board.mjs"
+    "validate:board": "node scripts/validate-board.mjs",
+    "test": "node --test tests/vault-connection.test.mjs",
+    "test:smoke": "node tests/os-http-smoke.mjs"
   },
   "dependencies": {
     "next": "16.2.9",

@@ -35,5 +35,11 @@ jobs:
       - name: Lint
         run: pnpm lint
 
+      - name: Unit tests
+        run: pnpm test
+
       - name: Build
         run: pnpm build
+
+      - name: Production HTTP smoke (synthetic data)
+        run: pnpm test:smoke

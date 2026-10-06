@@ -1,3 +1,4 @@
+import { vaultProblem } from '@/lib/obsidian';
 import { NextResponse } from 'next/server';
 import { updateVaultFile } from '@/lib/obsidian';
 
@@ -39,8 +40,8 @@ export async function PUT(request: Request) {
     });
   } catch (error) {
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : 'Unable to save note.' },
-      { status: 500 },
+      { error: vaultProblem(error).message, code: vaultProblem(error).code },
+      { status: vaultProblem(error).status },
     );
   }
 }

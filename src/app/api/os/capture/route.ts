@@ -1,3 +1,4 @@
+import { vaultProblem } from '@/lib/obsidian';
 import { NextResponse } from 'next/server';
 import { createVaultFile, todayInOsTimezone } from '@/lib/obsidian';
 
@@ -39,8 +40,8 @@ ${text}
     });
   } catch (error) {
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : 'Unable to create capture.' },
-      { status: 500 },
+      { error: vaultProblem(error).message, code: vaultProblem(error).code },
+      { status: vaultProblem(error).status },
     );
   }
 }

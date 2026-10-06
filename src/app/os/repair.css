@@ -1,0 +1,8 @@
+/* OS error and narrow viewport states */
+.os-main, .os-page, .os-card, .os-editor, .os-field { min-width: 0; }
+.os-card, .os-status, .os-editor-toolbar span { overflow-wrap: anywhere; }
+.os-two-column > .os-card, .os-integration-grid > .os-card, .os-review-grid > .os-card { margin-top: 0; }
+.os-page > .os-two-column { margin-top: 18px; }
+.os-chip { white-space: normal; }
+.os-markdown pre { max-width: 100%; }
+.os-field input, .os-field select { min-width: 0; }

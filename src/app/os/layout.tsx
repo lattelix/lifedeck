@@ -1,3 +1,4 @@
+import './repair.css';
 import type { Metadata } from 'next';
 import { OsNav } from '@/components/os/OsNav';
 

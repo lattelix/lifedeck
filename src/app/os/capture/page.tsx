@@ -1,6 +1,11 @@
+import { checkVaultConnection } from '@/lib/obsidian';
+import { VaultNotice } from '@/components/os/VaultNotice';
 import { CaptureForm } from '@/components/os/CaptureForm';
 
-export default function CapturePage() {
+export const dynamic = 'force-dynamic';
+
+export default async function CapturePage() {
+  const connection = await checkVaultConnection();
   return (
     <div className="os-page">
       <header className="os-page-header">
@@ -8,7 +13,7 @@ export default function CapturePage() {
         <h1>Get it out of your head.</h1>
         <p>Raw input is written into Obsidian Inbox. Classification and routing can happen after capture instead of before it.</p>
       </header>
-      <CaptureForm />
+      {connection.ok ? <CaptureForm /> : <VaultNotice problem={connection.error} />}
     </div>
   );
 }

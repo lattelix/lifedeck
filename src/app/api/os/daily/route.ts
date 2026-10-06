@@ -1,3 +1,4 @@
+import { vaultProblem } from '@/lib/obsidian';
 import { NextResponse } from 'next/server';
 import {
   createVaultFile,
@@ -25,8 +26,9 @@ export async function POST() {
         created: false,
         path: existing.path,
       });
-    } catch {
-      // Missing daily note: continue and create from the vault template.
+    } catch (error) {
+      // Only a verified missing path permits creation. Never write after a failed auth/network read.
+      if (vaultProblem(error).code !== 'not_found') throw error;
     }
 
     const template = await getVaultFile(TEMPLATE_PATH);
@@ -46,8 +48,8 @@ export async function POST() {
     });
   } catch (error) {
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : 'Unable to create Daily note.' },
-      { status: 500 },
+      { error: vaultProblem(error).message, code: vaultProblem(error).code },
+      { status: vaultProblem(error).status },
     );
   }
 }
