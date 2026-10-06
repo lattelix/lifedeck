@@ -1,3 +1,4 @@
+import { requireOwnerPage } from '@/lib/owner-access';
 import { VaultNotice } from '@/components/os/VaultNotice';
 import { vaultProblem } from '@/lib/obsidian';
 import Link from 'next/link';
@@ -22,6 +23,7 @@ function value(input: unknown) {
 }
 
 export default async function TodayPage() {
+  await requireOwnerPage();
   const date = todayInOsTimezone();
 
   if (!isObsidianConfigured()) {

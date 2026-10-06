@@ -1,3 +1,4 @@
+import { requireOwnerPage } from '@/lib/owner-access';
 import { VaultNotice } from '@/components/os/VaultNotice';
 import { checkVaultConnection, readVault } from '@/lib/obsidian';
 import { MarkdownView } from '@/components/os/MarkdownView';
@@ -6,6 +7,7 @@ import { getVaultFile, isObsidianConfigured, listVaultDirectory, parseNote } fro
 export const dynamic = 'force-dynamic';
 
 export default async function ReviewPage() {
+  await requireOwnerPage();
   if (!isObsidianConfigured()) {
     return <div className="os-page"><header className="os-page-header"><p className="os-eyebrow">Review</p><h1>Vault connector required</h1><p>Set <code>GITHUB_OBSIDIAN_TOKEN</code> to load Daily notes.</p></header></div>;
   }

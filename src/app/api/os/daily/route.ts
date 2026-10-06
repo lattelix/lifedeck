@@ -1,3 +1,4 @@
+import { guardMutation } from '@/lib/owner-access';
 import { vaultProblem } from '@/lib/obsidian';
 import { NextResponse } from 'next/server';
 import {
@@ -14,7 +15,8 @@ function renderTemplate(template: string, date: string) {
     .replaceAll('{{date:YYYY-MM-DD dddd}}', date);
 }
 
-export async function POST() {
+export async function POST(request: Request) {
+  const denied = guardMutation(request); if (denied) return denied;
   try {
     const date = todayInOsTimezone();
     const path = `10_System/Daily/${date}.md`;

@@ -1,4 +1,5 @@
 import 'server-only';
+import { requireOwnerData } from './owner-access';
 
 const TOKEN_ENDPOINT = 'https://oauth2.googleapis.com/token';
 const CALENDAR_API = 'https://www.googleapis.com/calendar/v3';
@@ -67,6 +68,7 @@ export function getConfiguredCalendars(): CalendarSource[] {
 }
 
 async function getAccessToken() {
+  await requireOwnerData();
   const config = credentials();
   if (!config) {
     throw new Error(
@@ -90,7 +92,7 @@ async function getAccessToken() {
 
   if (!response.ok) {
     throw new Error(
-      `Google OAuth refresh failed (${response.status}): ${await response.text()}`,
+      `Google OAuth refresh failed (${response.status}): проверь подключение в Integrations`,
     );
   }
 
@@ -120,7 +122,7 @@ async function calendarFetch(
 
   if (!response.ok) {
     throw new Error(
-      `Google Calendar request failed (${response.status}): ${await response.text()}`,
+      `Google Calendar request failed (${response.status}): проверь подключение в Integrations`,
     );
   }
 

@@ -89,3 +89,10 @@
   html { scroll-behavior: auto; }
   body, .os-shell *, .os-shell *::before, .os-shell *::after { transition: none !important; }
 }
+
+.os-logout { padding: 8px; }
+.os-logout button { border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 14px; color: var(--text-secondary); background: var(--bg-panel); cursor:pointer; font-size:12px; }
+.os-logout span { display:block; font-size:11px; color:var(--danger); }
+@media(max-width:720px) { .os-logout { order:1; padding:0; margin:0; flex:0 0 auto; } .os-logout button { min-height:40px; padding-inline:10px; } }
+
+@media(max-width:420px){ .os-sidebar .os-brand > span:nth-child(2) { display:none; } }

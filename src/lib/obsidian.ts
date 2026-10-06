@@ -1,4 +1,5 @@
 import 'server-only';
+import { requireOwnerData } from './owner-access';
 import { cache } from 'react';
 
 const DEFAULT_REPO = 'lattelix/obsidian';
@@ -92,6 +93,7 @@ function endpoint(path: string) {
   return `https://api.github.com/repos/${owner}/${repo}/contents/${path.split('/').map(encodeURIComponent).join('/')}`;
 }
 async function githubFetch(url: string, init?: RequestInit): Promise<Response> {
+  await requireOwnerData();
   const requestHeaders = headers((init?.method || 'GET') !== 'GET');
   let response: Response;
   try {

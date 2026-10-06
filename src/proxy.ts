@@ -1,64 +1,29 @@
 import { NextResponse, type NextRequest } from 'next/server';
-
-const REALM = 'LifeDeck Personal OS';
-
-function unauthorized(message = 'Authentication required.') {
-  return new Response(message, {
-    status: 401,
-    headers: {
-      'WWW-Authenticate': `Basic realm="${REALM}", charset="UTF-8"`,
-      'Cache-Control': 'no-store',
-    },
-  });
-}
+import { ownerAuthorized, authConfigured, safeReturnTo, PRIVATE_HEADERS } from '@/lib/auth-core';
 
 export function proxy(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
-  const host = request.headers.get('host')?.split(':')[0] || '';
-  const osHost = process.env.OS_HOST || 'os.lattelix.ru';
-
-  if (pathname === '/' && host === osHost) {
-    return NextResponse.redirect(new URL('/os', request.url));
+  const path = request.nextUrl.pathname;
+  const host = (request.headers.get('host') || '').split(':')[0];
+  if (path === '/' && host === (process.env.OS_HOST || 'os.lattelix.ru')) {
+    return NextResponse.rewrite(new URL('/about', request.url));
   }
-
-  const protectedPath = pathname.startsWith('/os') || pathname.startsWith('/api/os');
-  if (!protectedPath) return NextResponse.next();
-
-  const username = process.env.OS_USERNAME;
-  const password = process.env.OS_PASSWORD;
-
-  if (!username || !password) {
-    if (process.env.NODE_ENV !== 'production') return NextResponse.next();
-    return new Response(
-      'Personal OS is disabled until OS_USERNAME and OS_PASSWORD are configured.',
-      {
-        status: 503,
-        headers: { 'Cache-Control': 'no-store' },
-      },
-    );
-  }
-
-  const authorization = request.headers.get('authorization');
-  if (!authorization?.startsWith('Basic ')) return unauthorized();
-
-  try {
-    const decoded = atob(authorization.slice('Basic '.length));
-    const separator = decoded.indexOf(':');
-    if (separator === -1) return unauthorized();
-
-    const suppliedUsername = decoded.slice(0, separator);
-    const suppliedPassword = decoded.slice(separator + 1);
-
-    if (suppliedUsername !== username || suppliedPassword !== password) {
-      return unauthorized('Invalid credentials.');
+  const isPrivate = path === '/os' || path.startsWith('/os/') || path === '/api/os' || path.startsWith('/api/os/');
+  if (!isPrivate) return NextResponse.next();
+  if (!ownerAuthorized(request.headers)) {
+    const api = path.startsWith('/api/');
+    if (api || process.env.OS_ALLOW_BASIC_AUTH === 'true') {
+      const response = NextResponse.json({ error: authConfigured() ? 'Требуется вход владельца.' : 'Вход владельца пока не настроен.' }, { status: authConfigured() ? 401 : 503, headers: PRIVATE_HEADERS });
+      if (authConfigured() && process.env.OS_ALLOW_BASIC_AUTH === 'true') response.headers.set('WWW-Authenticate', 'Basic realm="LifeDeck Personal OS", charset="UTF-8"');
+      return response;
     }
-  } catch {
-    return unauthorized();
+    const url = new URL('/login', request.url);
+    url.searchParams.set('returnTo', safeReturnTo(path + request.nextUrl.search));
+    const response = NextResponse.redirect(url);
+    for (const [k,v] of Object.entries(PRIVATE_HEADERS)) response.headers.set(k,v);
+    return response;
   }
-
-  return NextResponse.next();
+  const response = NextResponse.next();
+  for (const [k,v] of Object.entries(PRIVATE_HEADERS)) response.headers.set(k,v);
+  return response;
 }
-
-export const config = {
-  matcher: ['/', '/os/:path*', '/api/os/:path*'],
-};
+export const config = { matcher: ['/', '/os/:path*', '/api/os/:path*'] };

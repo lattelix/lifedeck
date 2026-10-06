@@ -17,7 +17,7 @@ function load(mockFetch, env = {}) {
     exports: sandboxModule.exports, module: sandboxModule, Buffer, URL, Response, AbortSignal,
     process: { env: { GITHUB_OBSIDIAN_TOKEN: 'fixture-token', OBSIDIAN_REPO: repo, ...env } },
     fetch: mockFetch,
-    require: name => name === 'server-only' ? {} : require(name),
+    require: name => name === 'server-only' ? {} : name === './owner-access' ? { requireOwnerData: async () => {} } : require(name),
   });
   vm.runInContext(compiled, context);
   return sandboxModule.exports;

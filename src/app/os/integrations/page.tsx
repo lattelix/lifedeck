@@ -1,3 +1,4 @@
+import { requireOwnerPage } from '@/lib/owner-access';
 import { VaultNotice } from '@/components/os/VaultNotice';
 import { checkVaultConnection } from '@/lib/obsidian';
 import { getConfiguredCalendars, isGoogleCalendarConfigured } from '@/lib/google-calendar';
@@ -6,6 +7,7 @@ import { isObsidianConfigured, vaultRepoName } from '@/lib/obsidian';
 export const dynamic = 'force-dynamic';
 
 export default async function IntegrationsPage() {
+  await requireOwnerPage();
   const obsidian = isObsidianConfigured();
   const connection = await checkVaultConnection();
   const googleCalendar = isGoogleCalendarConfigured();
@@ -25,6 +27,7 @@ export default async function IntegrationsPage() {
         <p>При ошибке доступа: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → токен LifeDeck. Выбери obsidian и Contents: Read and write. При замене токена обнови GITHUB_OBSIDIAN_TOKEN в Vercel / Production и выполни Redeploy.</p>
         <p>Проверка повторяется при обновлении этой страницы. Секреты здесь не отображаются.</p>
         <h2>Production environment</h2>
+        <p><a href="/privacy#google">Как LifeDeck использует данные Google Calendar</a> · <a href="/privacy#delete">Отключение и удаление данных</a></p>
         <ul className="os-plain-list">
           <li><code>OS_USERNAME</code> + <code>OS_PASSWORD</code> protect the private workspace.</li>
           <li><code>GITHUB_OBSIDIAN_TOKEN</code> reads and writes the private vault.</li>

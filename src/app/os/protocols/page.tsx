@@ -1,3 +1,4 @@
+import { requireOwnerPage } from '@/lib/owner-access';
 import { VaultNotice } from '@/components/os/VaultNotice';
 import { vaultProblem } from '@/lib/obsidian';
 import { MarkdownView } from '@/components/os/MarkdownView';
@@ -9,6 +10,7 @@ const UNIVERSAL = '10_System/Protocols/Universal Daily Protocol.md';
 const SPEC = '10_System/Protocols/Protocol Object Spec.md';
 
 export default async function ProtocolsPage() {
+  await requireOwnerPage();
   if (!isObsidianConfigured()) return <NotConfigured />;
   const [protocolResult, specResult] = await Promise.allSettled([getVaultFile(UNIVERSAL), getVaultFile(SPEC)]);
   const protocol = protocolResult.status === 'fulfilled' ? protocolResult.value : null;

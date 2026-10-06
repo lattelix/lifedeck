@@ -1,3 +1,4 @@
+import { requireOwnerPage } from '@/lib/owner-access';
 import { VaultNotice } from '@/components/os/VaultNotice';
 import { checkVaultConnection, readVault } from '@/lib/obsidian';
 import { MarkdownView } from '@/components/os/MarkdownView';
@@ -12,6 +13,7 @@ const IMPORTANT_NOTES = [
 ];
 
 export default async function KnowledgePage() {
+  await requireOwnerPage();
   if (!isObsidianConfigured()) {
     return <div className="os-page"><header className="os-page-header"><p className="os-eyebrow">Knowledge</p><h1>Vault connector required</h1><p>Configure the private Obsidian connector to browse durable context here.</p></header></div>;
   }
