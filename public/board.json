@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-06T10:33:20.080Z"
+    "updatedAt": "2026-10-07T10:25:07.280Z"
   },
   "categories": [
     {
@@ -58,6 +58,12 @@
     }
   ],
   "items": [
+    {
+      "id": "gh-keyflow",
+      "label": "keyflow",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
     {
       "id": "gh-lifedeck",
       "label": "lifedeck",
@@ -970,11 +976,211 @@
     },
     {
       "date": "2026-10-06",
-      "totalMinutes": 150,
+      "totalMinutes": 460,
       "byCategory": {
-        "projects": 150
+        "projects": 460
       },
       "activities": [
+        {
+          "id": "gh_23246540703",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23246477526",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23239213913",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23229882478",
+          "title": "Создал branch → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23197697816",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23197371977",
+          "title": "Создал branch → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23196146650",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23195799980",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23195546283",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23195478996",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23194208499",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16575791486",
+          "title": "IssueCommentEvent → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16575611793",
+          "title": "PR opened → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_23189224723",
+          "title": "Создал branch → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23183975366",
+          "title": "Создал branch → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23180187256",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23179973535",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23179891842",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23177818689",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23177442464",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23177411806",
+          "title": "Создал branch → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16556767569",
+          "title": "IssueCommentEvent → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16556612506",
+          "title": "PR merged → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16556386326",
+          "title": "PR opened → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16532978418",
+          "title": "IssueCommentEvent → lifedeck",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
         {
           "id": "gh_16529797020",
           "title": "PR opened → lifedeck",
