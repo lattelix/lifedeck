@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-07T10:25:07.280Z"
+    "updatedAt": "2026-10-08T10:45:41.262Z"
   },
   "categories": [
     {
@@ -976,11 +976,59 @@
     },
     {
       "date": "2026-10-06",
-      "totalMinutes": 460,
+      "totalMinutes": 520,
       "byCategory": {
-        "projects": 460
+        "projects": 520
       },
       "activities": [
+        {
+          "id": "gh_23292854820",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23275117479",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23270923386",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23267813833",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23267739452",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23263717591",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
         {
           "id": "gh_23246540703",
           "title": "Push → keyflow (1 commits)",
@@ -1236,6 +1284,31 @@
           "sourceId": "github",
           "itemId": "gh-lifedeck",
           "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "totalMinutes": 50,
+      "byCategory": {
+        "projects": 50
+      },
+      "activities": [
+        {
+          "id": "gh_16713713849",
+          "title": "PR opened → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16713432245",
+          "title": "Review → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 20
         }
       ]
     }
