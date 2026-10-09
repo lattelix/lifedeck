@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-export const metadata: Metadata = { title: 'Свой порядок дня', alternates: { canonical: 'https://os.lattelix.ru/' } };
+export const metadata: Metadata = { title: 'Свой порядок дня', alternates: { canonical: 'https://os.lattelix.com/' } };
 export default function AboutPage() {
   return <>
     <section className="site-hero">
