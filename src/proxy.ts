@@ -4,7 +4,8 @@ import { ownerAuthorized, authConfigured, safeReturnTo, PRIVATE_HEADERS } from '
 export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const host = (request.headers.get('host') || '').split(':')[0];
-  if (path === '/' && host === (process.env.OS_HOST || 'os.lattelix.ru')) {
+  const publicOsHosts = [process.env.OS_HOST || 'os.lattelix.ru', 'os.lattelix.com'];
+  if (path === '/' && publicOsHosts.some((candidate) => candidate.toLowerCase() === host.toLowerCase())) {
     return NextResponse.rewrite(new URL('/about', request.url));
   }
   const isPrivate = path === '/os' || path.startsWith('/os/') || path === '/api/os' || path.startsWith('/api/os/');
