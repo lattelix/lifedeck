@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-08T10:45:41.262Z"
+    "updatedAt": "2026-10-09T10:44:36.830Z"
   },
   "categories": [
     {
@@ -59,14 +59,20 @@
   ],
   "items": [
     {
+      "id": "gh-lifedeck",
+      "label": "lifedeck",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
       "id": "gh-keyflow",
       "label": "keyflow",
       "categoryId": "projects",
       "sourceId": "github"
     },
     {
-      "id": "gh-lifedeck",
-      "label": "lifedeck",
+      "id": "gh-js-trail",
+      "label": "js-trail",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -1289,11 +1295,51 @@
     },
     {
       "date": "2026-10-08",
-      "totalMinutes": 50,
+      "totalMinutes": 100,
       "byCategory": {
-        "projects": 50
+        "projects": 100
       },
       "activities": [
+        {
+          "id": "gh_23455278292",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23454479889",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23436940679",
+          "title": "Push → js-trail (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-js-trail",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23401440901",
+          "title": "Создал branch → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23385334199",
+          "title": "Создал branch → js-trail",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-js-trail",
+          "minutes": 10
+        },
         {
           "id": "gh_16713713849",
           "title": "PR opened → keyflow",
@@ -1309,6 +1355,31 @@
           "sourceId": "github",
           "itemId": "gh-keyflow",
           "minutes": 20
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "totalMinutes": 20,
+      "byCategory": {
+        "projects": 20
+      },
+      "activities": [
+        {
+          "id": "gh_23466805307",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23446672310",
+          "title": "Push → lifedeck (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lifedeck",
+          "minutes": 10
         }
       ]
     }
