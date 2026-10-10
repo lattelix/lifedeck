@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-09T10:44:36.830Z"
+    "updatedAt": "2026-10-10T09:59:49.273Z"
   },
   "categories": [
     {
@@ -59,14 +59,20 @@
   ],
   "items": [
     {
-      "id": "gh-lifedeck",
-      "label": "lifedeck",
+      "id": "gh-keyflow",
+      "label": "keyflow",
       "categoryId": "projects",
       "sourceId": "github"
     },
     {
-      "id": "gh-keyflow",
-      "label": "keyflow",
+      "id": "gh-v0-portfolio-page",
+      "label": "v0-portfolio-page",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
+      "id": "gh-lifedeck",
+      "label": "lifedeck",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -79,12 +85,6 @@
     {
       "id": "gh-netgrow-academic",
       "label": "netgrow-academic",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
-      "id": "gh-v0-portfolio-page",
-      "label": "v0-portfolio-page",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -1295,11 +1295,35 @@
     },
     {
       "date": "2026-10-08",
-      "totalMinutes": 100,
+      "totalMinutes": 130,
       "byCategory": {
-        "projects": 100
+        "projects": 130
       },
       "activities": [
+        {
+          "id": "gh_23516772253",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23516423880",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23508407894",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
         {
           "id": "gh_23455278292",
           "title": "Push → keyflow (1 commits)",
@@ -1360,11 +1384,251 @@
     },
     {
       "date": "2026-10-09",
-      "totalMinutes": 20,
+      "totalMinutes": 450,
       "byCategory": {
-        "projects": 20
+        "projects": 450
       },
       "activities": [
+        {
+          "id": "gh_23555015874",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23554110765",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23554013120",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23554008581",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23553863975",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23552123610",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23551994557",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23551880105",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23551397562",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23551393479",
+          "title": "Создал branch → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23549781304",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23548016221",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23546951295",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23546226449",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23535141207",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23534526592",
+          "title": "Создал branch → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23534436607",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23534434288",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23533777751",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23533339664",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16867795044",
+          "title": "PR merged → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16867749906",
+          "title": "PR opened → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_23523938690",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_16866997677",
+          "title": "PR merged → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16866924078",
+          "title": "PR opened → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16866558669",
+          "title": "PR merged → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_16866549316",
+          "title": "Review → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 20
+        },
+        {
+          "id": "gh_16866461611",
+          "title": "PR merged → keyflow",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 30
+        },
+        {
+          "id": "gh_23521210291",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23521019167",
+          "title": "Push → v0-portfolio-page (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-v0-portfolio-page",
+          "minutes": 10
+        },
         {
           "id": "gh_23466805307",
           "title": "Push → lifedeck (1 commits)",
