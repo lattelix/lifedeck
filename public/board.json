@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-10T09:59:49.273Z"
+    "updatedAt": "2026-10-11T10:09:33.554Z"
   },
   "categories": [
     {
@@ -59,26 +59,26 @@
   ],
   "items": [
     {
+      "id": "gh-js-trail",
+      "label": "js-trail",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
+      "id": "gh-lattelix-lab",
+      "label": "lattelix-lab",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
       "id": "gh-keyflow",
       "label": "keyflow",
       "categoryId": "projects",
       "sourceId": "github"
     },
     {
-      "id": "gh-v0-portfolio-page",
-      "label": "v0-portfolio-page",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
       "id": "gh-lifedeck",
       "label": "lifedeck",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
-      "id": "gh-js-trail",
-      "label": "js-trail",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -162,202 +162,202 @@
       "activities": [
         {
           "id": "gh_22868739620",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22866881420",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22866570355",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22861726221",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22859646116",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22859640022",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22851595648",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22851342575",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22828525286",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22756531102",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22755694953",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22755224400",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22754348256",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22753766421",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22753423512",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22752978801",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22716014612",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22712505312",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22711795057",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22711445912",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22710883636",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22710850533",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22710807227",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22710608253",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_22709762557",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
@@ -378,10 +378,10 @@
         },
         {
           "id": "gh_22682843085",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         }
       ]
@@ -1302,18 +1302,18 @@
       "activities": [
         {
           "id": "gh_23516772253",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_23516423880",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
@@ -1384,11 +1384,75 @@
     },
     {
       "date": "2026-10-09",
-      "totalMinutes": 450,
+      "totalMinutes": 530,
       "byCategory": {
-        "projects": 450
+        "projects": 530
       },
       "activities": [
+        {
+          "id": "gh_23633812604",
+          "title": "Push → js-trail (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-js-trail",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23621549169",
+          "title": "Push → lattelix-lab (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lattelix-lab",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23604828013",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23604484578",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23602881017",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23602474403",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23599963164",
+          "title": "Push → keyflow (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-keyflow",
+          "minutes": 10
+        },
+        {
+          "id": "gh_23588519078",
+          "title": "Push → lattelix-lab (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-lattelix-lab",
+          "minutes": 10
+        },
         {
           "id": "gh_23555015874",
           "title": "Push → keyflow (1 commits)",
@@ -1471,10 +1535,10 @@
         },
         {
           "id": "gh_23549781304",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
@@ -1495,10 +1559,10 @@
         },
         {
           "id": "gh_23546226449",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
@@ -1567,10 +1631,10 @@
         },
         {
           "id": "gh_23523938690",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
@@ -1615,18 +1679,18 @@
         },
         {
           "id": "gh_23521210291",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
           "id": "gh_23521019167",
-          "title": "Push → v0-portfolio-page (1 commits)",
+          "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
-          "itemId": "gh-v0-portfolio-page",
+          "itemId": "gh-lattelix-lab",
           "minutes": 10
         },
         {
