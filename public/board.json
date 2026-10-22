@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-21T08:43:39.486Z"
+    "updatedAt": "2026-10-22T08:46:00.808Z"
   },
   "categories": [
     {
@@ -155,9 +155,9 @@
     },
     {
       "date": "2026-10-01",
-      "totalMinutes": 280,
+      "totalMinutes": 230,
       "byCategory": {
-        "projects": 280
+        "projects": 230
       },
       "activities": [
         {
@@ -338,46 +338,6 @@
         },
         {
           "id": "gh_22710807227",
-          "title": "Push → lattelix-lab (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lattelix-lab",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22710608253",
-          "title": "Push → lattelix-lab (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lattelix-lab",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22709762557",
-          "title": "Push → lattelix-lab (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lattelix-lab",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22700839509",
-          "title": "Создал branch → netgrow-academic",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-netgrow-academic",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22697697501",
-          "title": "Создал branch → netgrow-academic",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-netgrow-academic",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22682843085",
           "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
