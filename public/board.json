@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-24T08:16:36.809Z"
+    "updatedAt": "2026-10-25T08:34:27.147Z"
   },
   "categories": [
     {
@@ -301,9 +301,9 @@
     },
     {
       "date": "2026-10-03",
-      "totalMinutes": 480,
+      "totalMinutes": 460,
       "byCategory": {
-        "projects": 480
+        "projects": 460
       },
       "activities": [
         {
@@ -604,22 +604,6 @@
         },
         {
           "id": "gh_22861799403",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861627732",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861585744",
           "title": "Push → lifedeck (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
