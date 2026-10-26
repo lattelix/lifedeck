@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-25T08:34:27.147Z"
+    "updatedAt": "2026-10-26T09:09:48.114Z"
   },
   "categories": [
     {
@@ -120,23 +120,6 @@
       ]
     },
     {
-      "date": "2026-09-25",
-      "totalMinutes": 5,
-      "byCategory": {
-        "projects": 5
-      },
-      "activities": [
-        {
-          "id": "gh_15777893478",
-          "title": "★ Pochta",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-pochta",
-          "minutes": 5
-        }
-      ]
-    },
-    {
       "date": "2026-09-26",
       "totalMinutes": 5,
       "byCategory": {
@@ -155,9 +138,9 @@
     },
     {
       "date": "2026-10-01",
-      "totalMinutes": 40,
+      "totalMinutes": 30,
       "byCategory": {
-        "projects": 40
+        "projects": 30
       },
       "activities": [
         {
@@ -178,14 +161,6 @@
         },
         {
           "id": "gh_22866570355",
-          "title": "Push → lattelix-lab (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lattelix-lab",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861726221",
           "title": "Push → lattelix-lab (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
@@ -301,9 +276,9 @@
     },
     {
       "date": "2026-10-03",
-      "totalMinutes": 460,
+      "totalMinutes": 390,
       "byCategory": {
-        "projects": 460
+        "projects": 390
       },
       "activities": [
         {
@@ -548,62 +523,6 @@
         },
         {
           "id": "gh_22862014724",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861964333",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861958934",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861907603",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861871566",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861860083",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861810573",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_22861799403",
           "title": "Push → lifedeck (1 commits)",
           "categoryId": "projects",
           "sourceId": "github",
