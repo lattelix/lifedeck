@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-10-28T09:51:42.994Z"
+    "updatedAt": "2026-10-29T10:12:53.628Z"
   },
   "categories": [
     {
@@ -140,35 +140,11 @@
     },
     {
       "date": "2026-10-03",
-      "totalMinutes": 150,
+      "totalMinutes": 120,
       "byCategory": {
-        "projects": 150
+        "projects": 120
       },
       "activities": [
-        {
-          "id": "gh_23011011840",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23010922685",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23010725135",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
         {
           "id": "gh_16330547487",
           "title": "PR merged → lifedeck",
@@ -205,9 +181,9 @@
     },
     {
       "date": "2026-10-06",
-      "totalMinutes": 520,
+      "totalMinutes": 430,
       "byCategory": {
-        "projects": 520
+        "projects": 430
       },
       "activities": [
         {
@@ -371,62 +347,6 @@
           "minutes": 10
         },
         {
-          "id": "gh_23183975366",
-          "title": "Создал branch → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23180187256",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23179973535",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23179891842",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23177818689",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23177442464",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23177411806",
-          "title": "Создал branch → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
           "id": "gh_16556767569",
           "title": "IssueCommentEvent → lifedeck",
           "categoryId": "projects",
@@ -467,14 +387,6 @@
           "minutes": 30
         },
         {
-          "id": "gh_23150364272",
-          "title": "Создал branch → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
           "id": "gh_16527820219",
           "title": "PR merged → lifedeck",
           "categoryId": "projects",
@@ -489,14 +401,6 @@
           "sourceId": "github",
           "itemId": "gh-lifedeck",
           "minutes": 30
-        },
-        {
-          "id": "gh_23147911612",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
         },
         {
           "id": "gh_16526075932",
