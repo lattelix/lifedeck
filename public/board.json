@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-01T10:39:09.470Z"
+    "updatedAt": "2026-11-02T11:27:43.238Z"
   },
   "categories": [
     {
@@ -83,12 +83,6 @@
       "sourceId": "github"
     },
     {
-      "id": "gh-netgrow-academic",
-      "label": "netgrow-academic",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
       "id": "leetcode",
       "label": "LeetCode",
       "categoryId": "algorithms",
@@ -110,31 +104,6 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
-        }
-      ]
-    },
-    {
-      "date": "2026-10-02",
-      "totalMinutes": 60,
-      "byCategory": {
-        "projects": 60
-      },
-      "activities": [
-        {
-          "id": "gh_16301376270",
-          "title": "PR merged → netgrow-academic",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-netgrow-academic",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16258531469",
-          "title": "PR opened → netgrow-academic",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-netgrow-academic",
-          "minutes": 30
         }
       ]
     },
@@ -181,9 +150,9 @@
     },
     {
       "date": "2026-10-06",
-      "totalMinutes": 350,
+      "totalMinutes": 340,
       "byCategory": {
-        "projects": 350
+        "projects": 340
       },
       "activities": [
         {
@@ -256,14 +225,6 @@
           "categoryId": "projects",
           "sourceId": "github",
           "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23229882478",
-          "title": "Создал branch → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
           "minutes": 10
         },
         {
