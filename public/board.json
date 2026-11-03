@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-02T11:27:43.238Z"
+    "updatedAt": "2026-11-03T11:04:03.242Z"
   },
   "categories": [
     {
@@ -108,51 +108,10 @@
       ]
     },
     {
-      "date": "2026-10-03",
-      "totalMinutes": 120,
-      "byCategory": {
-        "projects": 120
-      },
-      "activities": [
-        {
-          "id": "gh_16330547487",
-          "title": "PR merged → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16330514458",
-          "title": "PR opened → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16330453318",
-          "title": "PR merged → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16330381183",
-          "title": "PR opened → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        }
-      ]
-    },
-    {
       "date": "2026-10-06",
-      "totalMinutes": 340,
+      "totalMinutes": 330,
       "byCategory": {
-        "projects": 340
+        "projects": 330
       },
       "activities": [
         {
@@ -217,14 +176,6 @@
           "categoryId": "projects",
           "sourceId": "github",
           "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23239213913",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
           "minutes": 10
         },
         {
