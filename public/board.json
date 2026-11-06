@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-05T11:13:28.119Z"
+    "updatedAt": "2026-11-06T11:11:53.133Z"
   },
   "categories": [
     {
@@ -109,9 +109,9 @@
     },
     {
       "date": "2026-10-06",
-      "totalMinutes": 330,
+      "totalMinutes": 80,
       "byCategory": {
-        "projects": 330
+        "projects": 80
       },
       "activities": [
         {
@@ -177,94 +177,6 @@
           "sourceId": "github",
           "itemId": "gh-keyflow",
           "minutes": 10
-        },
-        {
-          "id": "gh_16575791486",
-          "title": "IssueCommentEvent → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_16575611793",
-          "title": "PR opened → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16556767569",
-          "title": "IssueCommentEvent → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_16556612506",
-          "title": "PR merged → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16556386326",
-          "title": "PR opened → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16532978418",
-          "title": "IssueCommentEvent → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_16529797020",
-          "title": "PR opened → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16527820219",
-          "title": "PR merged → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16527127560",
-          "title": "PR opened → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16526075932",
-          "title": "IssueCommentEvent → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_16525995010",
-          "title": "PR merged → lifedeck",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 30
         }
       ]
     },
