@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-06T11:11:53.133Z"
+    "updatedAt": "2026-11-07T10:28:42.667Z"
   },
   "categories": [
     {
@@ -104,79 +104,6 @@
           "sourceId": "leetcode",
           "itemId": "leetcode",
           "minutes": 12
-        }
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "totalMinutes": 80,
-      "byCategory": {
-        "projects": 80
-      },
-      "activities": [
-        {
-          "id": "gh_23292854820",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23275117479",
-          "title": "Push → lifedeck (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lifedeck",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23270923386",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23267813833",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23267739452",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23263717591",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23246540703",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23246477526",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
         }
       ]
     },
