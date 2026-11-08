@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-07T10:28:42.667Z"
+    "updatedAt": "2026-11-08T10:36:02.803Z"
   },
   "categories": [
     {
@@ -109,9 +109,9 @@
     },
     {
       "date": "2026-10-08",
-      "totalMinutes": 130,
+      "totalMinutes": 60,
       "byCategory": {
-        "projects": 130
+        "projects": 60
       },
       "activities": [
         {
@@ -161,38 +161,6 @@
           "sourceId": "github",
           "itemId": "gh-js-trail",
           "minutes": 10
-        },
-        {
-          "id": "gh_23401440901",
-          "title": "Создал branch → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23385334199",
-          "title": "Создал branch → js-trail",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-js-trail",
-          "minutes": 10
-        },
-        {
-          "id": "gh_16713713849",
-          "title": "PR opened → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 30
-        },
-        {
-          "id": "gh_16713432245",
-          "title": "Review → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 20
         }
       ]
     },
