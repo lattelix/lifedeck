@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-09T11:51:34.210Z"
+    "updatedAt": "2026-11-10T11:25:37.462Z"
   },
   "categories": [
     {
@@ -71,12 +71,6 @@
       "sourceId": "github"
     },
     {
-      "id": "gh-js-trail",
-      "label": "js-trail",
-      "categoryId": "projects",
-      "sourceId": "github"
-    },
-    {
       "id": "leetcode",
       "label": "LeetCode",
       "categoryId": "algorithms",
@@ -103,9 +97,9 @@
     },
     {
       "date": "2026-10-09",
-      "totalMinutes": 250,
+      "totalMinutes": 60,
       "byCategory": {
-        "projects": 250
+        "projects": 60
       },
       "activities": [
         {
@@ -154,158 +148,6 @@
           "categoryId": "projects",
           "sourceId": "github",
           "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23633812604",
-          "title": "Push → js-trail (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-js-trail",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23621549169",
-          "title": "Push → lattelix-lab (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lattelix-lab",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23604828013",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23604484578",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23602881017",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23602474403",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23599963164",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23588519078",
-          "title": "Push → lattelix-lab (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lattelix-lab",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23555015874",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23554110765",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23554013120",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23554008581",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23553863975",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23552123610",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23551994557",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23551880105",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23551397562",
-          "title": "Push → keyflow (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23551393479",
-          "title": "Создал branch → keyflow",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-keyflow",
-          "minutes": 10
-        },
-        {
-          "id": "gh_23549781304",
-          "title": "Push → lattelix-lab (1 commits)",
-          "categoryId": "projects",
-          "sourceId": "github",
-          "itemId": "gh-lattelix-lab",
           "minutes": 10
         }
       ]
