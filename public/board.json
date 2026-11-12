@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-11T11:13:54.746Z"
+    "updatedAt": "2026-11-12T11:31:26.512Z"
   },
   "categories": [
     {
@@ -59,6 +59,12 @@
   ],
   "items": [
     {
+      "id": "gh-aurelia",
+      "label": "aurelia",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
+    {
       "id": "gh-lattelix-lab",
       "label": "lattelix-lab",
       "categoryId": "projects",
@@ -102,6 +108,23 @@
           "categoryId": "projects",
           "sourceId": "github",
           "itemId": "gh-lattelix-lab",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "totalMinutes": 10,
+      "byCategory": {
+        "projects": 10
+      },
+      "activities": [
+        {
+          "id": "gh_26912502095",
+          "title": "Push → aurelia (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-aurelia",
           "minutes": 10
         }
       ]
