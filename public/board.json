@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-12T11:31:26.512Z"
+    "updatedAt": "2026-11-13T11:16:23.747Z"
   },
   "categories": [
     {
@@ -108,6 +108,23 @@
           "categoryId": "projects",
           "sourceId": "github",
           "itemId": "gh-lattelix-lab",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "totalMinutes": 10,
+      "byCategory": {
+        "projects": 10
+      },
+      "activities": [
+        {
+          "id": "gh_26971910940",
+          "title": "Создал branch → aurelia",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-aurelia",
           "minutes": 10
         }
       ]
