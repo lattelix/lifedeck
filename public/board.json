@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-16T11:47:15.764Z"
+    "updatedAt": "2026-11-17T12:07:08.164Z"
   },
   "categories": [
     {
@@ -58,6 +58,12 @@
     }
   ],
   "items": [
+    {
+      "id": "gh-talentbay",
+      "label": "talentbay",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
     {
       "id": "gh-aurelia",
       "label": "aurelia",
@@ -143,6 +149,31 @@
           "sourceId": "github",
           "itemId": "gh-aurelia",
           "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "totalMinutes": 60,
+      "byCategory": {
+        "projects": 60
+      },
+      "activities": [
+        {
+          "id": "gh_20385753045",
+          "title": "PR merged → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20384095693",
+          "title": "PR opened → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
         }
       ]
     }
