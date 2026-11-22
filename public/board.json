@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-21T11:27:31.574Z"
+    "updatedAt": "2026-11-22T11:42:32.668Z"
   },
   "categories": [
     {
@@ -47,7 +47,8 @@
       "id": "leetcode",
       "label": "LeetCode",
       "url": "https://leetcode.com/u/lattelix/",
-      "status": "ok"
+      "status": "empty",
+      "statusMessage": "За последние 180 дней активности не найдено"
     },
     {
       "id": "codewars",
@@ -75,32 +76,9 @@
       "label": "lattelix-lab",
       "categoryId": "projects",
       "sourceId": "github"
-    },
-    {
-      "id": "leetcode",
-      "label": "LeetCode",
-      "categoryId": "algorithms",
-      "sourceId": "leetcode"
     }
   ],
   "days": [
-    {
-      "date": "2026-05-26",
-      "totalMinutes": 12,
-      "byCategory": {
-        "algorithms": 12
-      },
-      "activities": [
-        {
-          "id": "lc_2026-05-26",
-          "title": "LeetCode: 1 сабмишенов",
-          "categoryId": "algorithms",
-          "sourceId": "leetcode",
-          "itemId": "leetcode",
-          "minutes": 12
-        }
-      ]
-    },
     {
       "date": "2026-11-08",
       "totalMinutes": 10,
@@ -187,11 +165,27 @@
     },
     {
       "date": "2026-11-20",
-      "totalMinutes": 280,
+      "totalMinutes": 300,
       "byCategory": {
-        "projects": 280
+        "projects": 300
       },
       "activities": [
+        {
+          "id": "gh_27914899375",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27820215910",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
         {
           "id": "gh_20816082654",
           "title": "IssueCommentEvent → talentbay",
@@ -364,11 +358,203 @@
     },
     {
       "date": "2026-11-21",
-      "totalMinutes": 20,
+      "totalMinutes": 410,
       "byCategory": {
-        "projects": 20
+        "projects": 410
       },
       "activities": [
+        {
+          "id": "gh_27912989744",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27912485564",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27907572223",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27859416187",
+          "title": "Создал branch → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27858467625",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27857205471",
+          "title": "DeleteEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 5
+        },
+        {
+          "id": "gh_27850543468",
+          "title": "DeleteEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 5
+        },
+        {
+          "id": "gh_20873405363",
+          "title": "PR opened → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20872996533",
+          "title": "PR merged → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20872951057",
+          "title": "IssueCommentEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_20872950674",
+          "title": "Issue closed → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 15
+        },
+        {
+          "id": "gh_20872940592",
+          "title": "IssueCommentEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_20872940451",
+          "title": "Issue closed → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 15
+        },
+        {
+          "id": "gh_20872931317",
+          "title": "PR opened → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20872704720",
+          "title": "PR merged → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20872637947",
+          "title": "Issue closed → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 15
+        },
+        {
+          "id": "gh_20872637318",
+          "title": "IssueCommentEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_20872598194",
+          "title": "IssueCommentEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_20872597722",
+          "title": "Issue closed → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 15
+        },
+        {
+          "id": "gh_20872391375",
+          "title": "PR merged → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20871755056",
+          "title": "PR merged → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20870934297",
+          "title": "IssueCommentEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_20870459042",
+          "title": "PR opened → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20870191242",
+          "title": "IssueCommentEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
         {
           "id": "gh_20843251492",
           "title": "Review → talentbay",
