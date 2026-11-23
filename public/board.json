@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-22T11:42:32.668Z"
+    "updatedAt": "2026-11-23T13:17:08.984Z"
   },
   "categories": [
     {
@@ -59,6 +59,12 @@
     }
   ],
   "items": [
+    {
+      "id": "gh-capricore",
+      "label": "CapriCore",
+      "categoryId": "projects",
+      "sourceId": "github"
+    },
     {
       "id": "gh-talentbay",
       "label": "talentbay",
@@ -165,11 +171,99 @@
     },
     {
       "date": "2026-11-20",
-      "totalMinutes": 300,
+      "totalMinutes": 410,
       "byCategory": {
-        "projects": 300
+        "projects": 410
       },
       "activities": [
+        {
+          "id": "gh_28004706419",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27995185111",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27992747653",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27988663607",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27982436020",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27978711222",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27963930404",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27959364310",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27958157099",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27957603830",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_27953128876",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
         {
           "id": "gh_27914899375",
           "title": "Push → talentbay (1 commits)",
@@ -358,11 +452,19 @@
     },
     {
       "date": "2026-11-21",
-      "totalMinutes": 410,
+      "totalMinutes": 415,
       "byCategory": {
-        "projects": 410
+        "projects": 415
       },
       "activities": [
+        {
+          "id": "gh_27977628672",
+          "title": "DeleteEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 5
+        },
         {
           "id": "gh_27912989744",
           "title": "Push → talentbay (1 commits)",
@@ -562,6 +664,72 @@
           "sourceId": "github",
           "itemId": "gh-talentbay",
           "minutes": 20
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "totalMinutes": 10,
+      "byCategory": {
+        "projects": 10
+      },
+      "activities": [
+        {
+          "id": "gh_27995038835",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "totalMinutes": 85,
+      "byCategory": {
+        "projects": 85
+      },
+      "activities": [
+        {
+          "id": "gh_20999000167",
+          "title": "PR opened → CapriCore",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-capricore",
+          "minutes": 30
+        },
+        {
+          "id": "gh_20995572558",
+          "title": "Fork → CapriCore",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-capricore",
+          "minutes": 5
+        },
+        {
+          "id": "gh_28023509291",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_28017017847",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_20980371578",
+          "title": "PR merged → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 30
         }
       ]
     }
