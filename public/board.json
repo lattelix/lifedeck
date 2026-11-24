@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-23T13:17:08.984Z"
+    "updatedAt": "2026-11-24T13:58:55.200Z"
   },
   "categories": [
     {
@@ -60,14 +60,14 @@
   ],
   "items": [
     {
-      "id": "gh-capricore",
-      "label": "CapriCore",
+      "id": "gh-talentbay",
+      "label": "talentbay",
       "categoryId": "projects",
       "sourceId": "github"
     },
     {
-      "id": "gh-talentbay",
-      "label": "talentbay",
+      "id": "gh-capricore",
+      "label": "CapriCore",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -452,11 +452,19 @@
     },
     {
       "date": "2026-11-21",
-      "totalMinutes": 415,
+      "totalMinutes": 420,
       "byCategory": {
-        "projects": 415
+        "projects": 420
       },
       "activities": [
+        {
+          "id": "gh_28064102204",
+          "title": "DeleteEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 5
+        },
         {
           "id": "gh_27977628672",
           "title": "DeleteEvent → talentbay",
@@ -686,11 +694,43 @@
     },
     {
       "date": "2026-11-23",
-      "totalMinutes": 85,
+      "totalMinutes": 120,
       "byCategory": {
-        "projects": 85
+        "projects": 120
       },
       "activities": [
+        {
+          "id": "gh_28136366797",
+          "title": "Push → talentbay (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 10
+        },
+        {
+          "id": "gh_28095658669",
+          "title": "DeleteEvent → talentbay",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-talentbay",
+          "minutes": 5
+        },
+        {
+          "id": "gh_28042736644",
+          "title": "Push → CapriCore (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-capricore",
+          "minutes": 10
+        },
+        {
+          "id": "gh_28041598357",
+          "title": "Push → CapriCore (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-capricore",
+          "minutes": 10
+        },
         {
           "id": "gh_20999000167",
           "title": "PR opened → CapriCore",
