@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-26T12:54:00.929Z"
+    "updatedAt": "2026-11-27T12:49:10.547Z"
   },
   "categories": [
     {
@@ -60,14 +60,14 @@
   ],
   "items": [
     {
-      "id": "gh-talentbay",
-      "label": "talentbay",
+      "id": "gh-capricore",
+      "label": "CapriCore",
       "categoryId": "projects",
       "sourceId": "github"
     },
     {
-      "id": "gh-capricore",
-      "label": "CapriCore",
+      "id": "gh-talentbay",
+      "label": "talentbay",
       "categoryId": "projects",
       "sourceId": "github"
     },
@@ -770,6 +770,23 @@
           "sourceId": "github",
           "itemId": "gh-talentbay",
           "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "totalMinutes": 10,
+      "byCategory": {
+        "projects": 10
+      },
+      "activities": [
+        {
+          "id": "gh_21398005434",
+          "title": "IssueCommentEvent → CapriCore",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-capricore",
+          "minutes": 10
         }
       ]
     }
