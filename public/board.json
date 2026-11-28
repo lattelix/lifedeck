@@ -2,7 +2,7 @@
   "profile": {
     "name": "Alex",
     "tagline": "Building Second Brain OS · dev & founder",
-    "updatedAt": "2026-11-27T12:49:10.547Z"
+    "updatedAt": "2026-11-28T12:01:02.340Z"
   },
   "categories": [
     {
@@ -47,8 +47,7 @@
       "id": "leetcode",
       "label": "LeetCode",
       "url": "https://leetcode.com/u/lattelix/",
-      "status": "empty",
-      "statusMessage": "За последние 180 дней активности не найдено"
+      "status": "ok"
     },
     {
       "id": "codewars",
@@ -82,6 +81,12 @@
       "label": "lattelix-lab",
       "categoryId": "projects",
       "sourceId": "github"
+    },
+    {
+      "id": "leetcode",
+      "label": "LeetCode",
+      "categoryId": "algorithms",
+      "sourceId": "leetcode"
     }
   ],
   "days": [
@@ -775,11 +780,19 @@
     },
     {
       "date": "2026-11-26",
-      "totalMinutes": 10,
+      "totalMinutes": 20,
       "byCategory": {
-        "projects": 10
+        "projects": 20
       },
       "activities": [
+        {
+          "id": "gh_28478803470",
+          "title": "Push → CapriCore (1 commits)",
+          "categoryId": "projects",
+          "sourceId": "github",
+          "itemId": "gh-capricore",
+          "minutes": 10
+        },
         {
           "id": "gh_21398005434",
           "title": "IssueCommentEvent → CapriCore",
@@ -787,6 +800,23 @@
           "sourceId": "github",
           "itemId": "gh-capricore",
           "minutes": 10
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "totalMinutes": 24,
+      "byCategory": {
+        "algorithms": 24
+      },
+      "activities": [
+        {
+          "id": "lc_2026-11-27",
+          "title": "LeetCode: 2 сабмишенов",
+          "categoryId": "algorithms",
+          "sourceId": "leetcode",
+          "itemId": "leetcode",
+          "minutes": 24
         }
       ]
     }
